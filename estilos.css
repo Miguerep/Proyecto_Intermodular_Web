@@ -1,4 +1,3 @@
-/* Restablecer márgenes y rellenos predeterminados */
 * {
     margin: 0;
     padding: 0;
@@ -7,111 +6,46 @@
 
 /* Estilo del cuerpo de la página */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Fondo gris claro */
-    color: #333; /* Color de texto oscuro */
+    font-family: 'Arial', sans-serif;  
+    background-color: #f0f0f0;  
+    color: #333;  
     line-height: 1.6;
-    padding: 20px;
+    padding: 20px;  
 }
 
-/* Estilo del encabezado */
-header {
-    background-color: #4CAF50; /* Color de fondo verde */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+/* Estilo del encabezado (título) */
+h1 {
+    font-size: 4em;  
+    color: #4CAF50;  
+    text-align: center;  
+    margin-top: 50px;  
+    margin-bottom: 30px;  
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-/* Estilo de los subtítulos en la página */
-h2 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 15px;
+/* Contenedor principal con fondo blanco */
+.main-container {
+    background-color: white;  
+    padding: 40px;  
+    margin: 0 auto;  
+    max-width: 900px;  
+    border-radius: 8px;  
 }
 
 /* Estilo de los párrafos */
 p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 15px;
+    font-size: 1.2em;  
+    color: #555;  
+    margin-bottom: 20px;  
+    line-height: 1.6;  
 }
 
 /* Estilo de los enlaces */
 a {
-    color: #4CAF50; /* Verde */
-    text-decoration: none;
-    font-weight: bold;
+    color: #4CAF50;  
+    text-decoration: none;  
 }
 
 a:hover {
-    color: #e94e77; /* Cambia a un color rosado al pasar el ratón */
-}
-
-/* Estilo para los bloques de contenido (divs) */
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-/* Estilo para las listas */
-ul {
-    list-style-type: none; /* Eliminar las viñetas predeterminadas */
-    padding-left: 20px;
-}
-
-ul li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-ul li::before {
-    content: '•'; /* Usar puntos personalizados */
-    color: #4CAF50; /* Color verde */
-    margin-right: 10px;
-}
-
-/* Estilo del pie de página */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 1em;
-    color: #777; /* Texto en gris claro */
-}
-
-footer a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #e94e77; /* Cambiar a color rosado en hover */
-}
-
-/* Diseño responsivo para dispositivos más pequeños */
-@media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    section {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1em;
-    }
+    color: #e94e77;  
+    text-decoration: underline;  
 }
