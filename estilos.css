@@ -1,4 +1,3 @@
-/* Restablecer márgenes y rellenos predeterminados */
 * {
     margin: 0;
     padding: 0;
@@ -7,46 +6,46 @@
 
 /* Estilo del cuerpo de la página */
 body {
-    font-family: 'Arial', sans-serif;  /* Fuente simple y legible */
-    background-color: #f0f0f0;  /* Fondo gris claro */
-    color: #333;  /* Color de texto oscuro */
+    font-family: 'Arial', sans-serif;  
+    background-color: #f0f0f0;  
+    color: #333;  
     line-height: 1.6;
-    padding: 20px;  /* Espaciado alrededor de la página */
+    padding: 20px;  
 }
 
 /* Estilo del encabezado (título) */
 h1 {
-    font-size: 4em;  /* Título grande */
-    color: #4CAF50;  /* Color verde para el título */
-    text-align: center;  /* Centrado del título */
-    margin-top: 50px;  /* Espacio superior */
-    margin-bottom: 30px;  /* Espacio inferior */
+    font-size: 4em;  
+    color: #4CAF50;  
+    text-align: center;  
+    margin-top: 50px;  
+    margin-bottom: 30px;  
 }
 
 /* Contenedor principal con fondo blanco */
 .main-container {
-    background-color: white;  /* Fondo blanco */
-    padding: 40px;  /* Espaciado dentro del contenedor */
-    margin: 0 auto;  /* Centrado horizontal */
-    max-width: 900px;  /* Ancho máximo */
-    border-radius: 8px;  /* Bordes redondeados */
+    background-color: white;  
+    padding: 40px;  
+    margin: 0 auto;  
+    max-width: 900px;  
+    border-radius: 8px;  
 }
 
 /* Estilo de los párrafos */
 p {
-    font-size: 1.2em;  /* Tamaño de fuente agradable */
-    color: #555;  /* Texto en color gris oscuro */
-    margin-bottom: 20px;  /* Espaciado inferior */
-    line-height: 1.6;  /* Mejor legibilidad entre líneas */
+    font-size: 1.2em;  
+    color: #555;  
+    margin-bottom: 20px;  
+    line-height: 1.6;  
 }
 
 /* Estilo de los enlaces */
 a {
-    color: #4CAF50;  /* Color verde para los enlaces */
-    text-decoration: none;  /* Sin subrayado por defecto */
+    color: #4CAF50;  
+    text-decoration: none;  
 }
 
 a:hover {
-    color: #e94e77;  /* Color rosado al pasar el ratón */
-    text-decoration: underline;  /* Subrayado al hacer hover */
+    color: #e94e77;  
+    text-decoration: underline;  
 }
