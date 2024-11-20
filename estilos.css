@@ -1,3 +1,4 @@
+/* Restablecer el box-sizing */
 * {
     box-sizing: border-box;
 }
@@ -20,25 +21,8 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Contenedor principal con fondo blanco */
-.main-container {
-    background-color: white;
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 900px;
-    border-radius: 8px;
-}
-
-/* Estilo de los párrafos */
-p {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-/* Estilo general de los enlaces */
-a {
+/* Estilo específico para los botones */
+a.btn {
     display: inline-block; /* Para que se comporten como botones */
     font-size: 1.2em;
     color: #ffffff;
@@ -52,7 +36,7 @@ a {
     text-align: center;
 }
 
-a:hover {
+a.btn:hover {
     background-color: #ffffff; /* Fondo blanco al pasar el ratón */
     color: #4CAF50; /* Cambia el texto a verde */
     border-color: #4CAF50; /* Mantiene el borde verde */
@@ -61,7 +45,7 @@ a:hover {
 
 /* Asegurar que se ve bien en dispositivos móviles */
 @media (max-width: 600px) {
-    a {
+    a.btn {
         font-size: 1em;
         padding: 8px 16px;
     }
