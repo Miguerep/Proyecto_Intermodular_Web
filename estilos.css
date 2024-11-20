@@ -1,50 +1,68 @@
 * {
-
     box-sizing: border-box;
 }
 
 /* Estilo del cuerpo de la página */
 body {
-    font-family: 'Arial', sans-serif;  
-    background-color: #f0f0f0;  
-    color: #333;  
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     line-height: 1.6;
-    padding: 20px;  
+    padding: 20px;
 }
 
 /* Estilo del encabezado (título) */
 h1 {
-    font-size: 4em;  
-    color: #4CAF50;  
-    text-align: center;  
-    margin-top: 50px;  
-    margin-bottom: 30px;  
+    font-size: 4em;
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 /* Contenedor principal con fondo blanco */
 .main-container {
-    background-color: white;  
-    padding: 40px;  
-    margin: 0 auto;  
-    max-width: 900px;  
-    border-radius: 8px;  
+    background-color: white;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 8px;
 }
 
 /* Estilo de los párrafos */
 p {
-    font-size: 1.2em;  
-    color: #555;  
-    margin-bottom: 20px;  
-    line-height: 1.6;  
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-/* Estilo de los enlaces */
+/* Estilo general de los enlaces */
 a {
-    color: #4CAF50;  
-    text-decoration: none;  
+    display: inline-block; /* Para que se comporten como botones */
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #4CAF50; /* Color de fondo */
+    text-decoration: none;
+    padding: 10px 20px; /* Espaciado interno */
+    border: 2px solid #4CAF50; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Animación para efectos */
+    margin: 10px; /* Espaciado entre botones */
+    text-align: center;
 }
 
 a:hover {
-    color: #e94e77;  
-    text-decoration: underline;  
+    background-color: #ffffff; /* Fondo blanco al pasar el ratón */
+    color: #4CAF50; /* Cambia el texto a verde */
+    border-color: #4CAF50; /* Mantiene el borde verde */
+    text-decoration: none; /* Evita subrayado */
+}
+
+/* Asegurar que se ve bien en dispositivos móviles */
+@media (max-width: 600px) {
+    a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
 }
