@@ -1,16 +1,117 @@
+/* Restablecer márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Estilo del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #333; /* Color de texto oscuro */
+    line-height: 1.6;
+    padding: 20px;
+}
 
+/* Estilo del encabezado */
+header {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
 
+/* Estilo de los subtítulos en la página */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
 
-div {
-font-family: Verdana, Geneva, sans-serif;
-font-size: 15px;
-letter-spacing: -1px;
-word-spacing: 2px;
-color: #000000;
-font-weight: 400;
-text-decoration: none solid rgb(68, 68, 68);
-font-style: normal;
-font-variant: normal;
-text-transform: none;}
+/* Estilo de los párrafos */
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #4CAF50; /* Verde */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e94e77; /* Cambia a un color rosado al pasar el ratón */
+}
+
+/* Estilo para los bloques de contenido (divs) */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las listas */
+ul {
+    list-style-type: none; /* Eliminar las viñetas predeterminadas */
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: '•'; /* Usar puntos personalizados */
+    color: #4CAF50; /* Color verde */
+    margin-right: 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #777; /* Texto en gris claro */
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e94e77; /* Cambiar a color rosado en hover */
+}
+
+/* Diseño responsivo para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
