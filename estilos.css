@@ -27,6 +27,9 @@ h2 {
     margin-top: auto;
     margin-bottom: auto;
 }
+ul {
+    font-size: large;
+}
 
 /* Estilo específico para los botones */
 a.btn {
