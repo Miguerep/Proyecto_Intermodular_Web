@@ -20,6 +20,13 @@ h1 {
     margin-top: 50px;
     margin-bottom: 30px;
 }
+h2 {
+    font-size: x-large;
+    color: darkseagreen;
+    text-align: justify;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 /* Estilo específico para los botones */
 a.btn {
