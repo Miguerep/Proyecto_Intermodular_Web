@@ -49,6 +49,12 @@ div img {
     max-width: 100%;
     border-radius: 8px; /* Bordes redondeados para mejor apariencia */
 }
+/* Estilo para el texto destacado */
+.texto-destacado {
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-weight: bold; /* Hace que el texto sea en negrita */
+}
+
 
 /* Contenedor de los botones con flexbox */
 .container-btns {
