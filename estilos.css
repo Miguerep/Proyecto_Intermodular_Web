@@ -63,13 +63,7 @@ a.btn:hover {
     text-decoration: none; /* Evita subrayado */
 }
 
-/* Asegurar que se ve bien en dispositivos móviles */
-@media (max-width: 600px) {
-    a.btn {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
-}
+
 
 
 
