@@ -34,10 +34,10 @@ ul {
     font-size: large;
 }
 
-/* Sangría en los párrafos */
+/* Estilo para los párrafos con margen izquierdo */
 p {
-    text-indent: 2em; /* Tabulación hacia dentro */
-    text-align: justify; /* Alineación justificada para un aspecto uniforme */
+    text-align: justify; /* Justificar el texto para una apariencia limpia */
+    padding-left: 2em; /* Sangría en toda la línea (no solo la primera) */
     margin-bottom: 15px; /* Separación entre párrafos */
     color: #555; /* Color del texto ligeramente más claro */
 }
@@ -71,6 +71,8 @@ a.btn:hover {
     border-color: #4CAF50; /* Mantiene el borde verde */
     text-decoration: none; /* Evita subrayado */
 }
+
+
 
 
 
