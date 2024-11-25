@@ -10,7 +10,7 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
-    
+    margin: 0;
 }
 
 /* Estilo del encabezado (título) */
@@ -34,11 +34,20 @@ ul {
     font-size: large;
 }
 
+/* Sangría en los párrafos */
+p {
+    text-indent: 2em; /* Tabulación hacia dentro */
+    text-align: justify; /* Alineación justificada para un aspecto uniforme */
+    margin-bottom: 15px; /* Separación entre párrafos */
+    color: #555; /* Color del texto ligeramente más claro */
+}
+
+/* Estilo de imágenes centradas */
 div img {
     display: block;
-    margin: 0 auto; 
-    max-width: 100%; 
-    
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px; /* Bordes redondeados para mejor apariencia */
 }
 
 /* Estilo específico para los botones */
@@ -62,6 +71,9 @@ a.btn:hover {
     border-color: #4CAF50; /* Mantiene el borde verde */
     text-decoration: none; /* Evita subrayado */
 }
+
+
+
 
 
 
