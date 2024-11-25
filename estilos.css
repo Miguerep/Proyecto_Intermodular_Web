@@ -50,9 +50,18 @@ div img {
     border-radius: 8px; /* Bordes redondeados para mejor apariencia */
 }
 
-/* Estilo específico para los botones */
+/* Contenedor de los botones con flexbox */
+.container-btns {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten a nuevas líneas si es necesario */
+    justify-content: center; /* Alinea los botones al centro */
+    gap: 15px; /* Espaciado entre los botones */
+    margin-bottom: 20px; /* Separación inferior */
+}
+
+/* Estilo para los botones */
 a.btn {
-    display: inline-block; /* Para que se comporten como botones */
+    display: inline-block;
     font-size: 1.2em;
     color: #ffffff;
     background-color: #4CAF50; /* Color de fondo */
@@ -60,17 +69,20 @@ a.btn {
     padding: 10px 20px; /* Espaciado interno */
     border: 2px solid #4CAF50; /* Borde del botón */
     border-radius: 5px; /* Bordes redondeados */
-    transition: all 0.3s ease; /* Animación para efectos */
-    margin: 10px; /* Espaciado entre botones */
+    transition: all 0.3s ease; /* Animación para los efectos */
+    min-width: 200px; /* Tamaño mínimo de los botones */
     text-align: center;
 }
 
+/* Efecto hover para los botones */
 a.btn:hover {
     background-color: #ffffff; /* Fondo blanco al pasar el ratón */
     color: #4CAF50; /* Cambia el texto a verde */
     border-color: #4CAF50; /* Mantiene el borde verde */
     text-decoration: none; /* Evita subrayado */
 }
+
+
 
 
 
