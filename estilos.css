@@ -96,26 +96,27 @@ a.btn:hover {
 	display: table-row;
 }
 .divTablaEncabezado {
-	background-color: #EEE;
+	background-color: #056b0a;
 	display: table-header-group;
 }
 .divTablaCelda, .divTablaVentInc {
-	border: 1px solid #999999;
+	border: 1px solid #000000;
 	display: table-cell;
 	padding: 3px 10px;
 }
 .divTablaEncabezado {
-	background-color: #EEE;
+	background-color: #26c448;
 	display: table-header-group;
 	font-weight: bold;
 }
 .divTablaFinal {
-	background-color: #EEE;
+	background-color: #08eb67;
 	display: table-footer-group;
 	font-weight: bold;
 }
 .divTablaCuerpo {
 	display: table-row-group;
+    background-color: #98fcb1;
 }
 
 
