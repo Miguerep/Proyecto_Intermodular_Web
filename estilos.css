@@ -88,33 +88,33 @@ a.btn:hover {
     text-decoration: none; /* Evita subrayado */
 }
 /* DivTable.com */
-.divTable{
+.divTabla{
 	display: table;
 	width: 100%;
 }
-.divTableRow {
+.divTablaFila {
 	display: table-row;
 }
-.divTableHeading {
+.divTablaEncabezado {
 	background-color: #EEE;
 	display: table-header-group;
 }
-.divTableCell, .divTableHead {
+.divTablaCelda, .divTablaEncabezado {
 	border: 1px solid #999999;
 	display: table-cell;
 	padding: 3px 10px;
 }
-.divTableHeading {
+.divTablaEncabezado {
 	background-color: #EEE;
 	display: table-header-group;
 	font-weight: bold;
 }
-.divTableFoot {
+.divTablaFinal {
 	background-color: #EEE;
 	display: table-footer-group;
 	font-weight: bold;
 }
-.divTableBody {
+.divTablaCuerpo {
 	display: table-row-group;
 }
 
