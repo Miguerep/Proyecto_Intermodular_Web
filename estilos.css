@@ -90,7 +90,7 @@ a.btn:hover {
 /* DivTable.com */
 .divTabla{
 	display: table;
-	width: 100%;
+	width: 820px;
 }
 .divTablaFila {
 	display: table-row;
@@ -103,6 +103,7 @@ a.btn:hover {
 	border: 1px solid #000000;
 	display: table-cell;
 	padding: 3px 10px;
+    width: 410px;
 }
 .divTablaEncabezado {
 	background-color: #26c448;
