@@ -7,7 +7,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
-    color: #333;
+    color: #000000;
     line-height: 1.6;
     padding: 40px;
     margin: 0;
@@ -20,6 +20,7 @@ h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
+    text-shadow: 4px 4px 5px #000000;
 }
 
 h2 {
@@ -28,6 +29,7 @@ h2 {
     text-align: justify;
     margin-top: auto;
     margin-bottom: auto;
+
 }
 
 ul {
@@ -36,11 +38,24 @@ ul {
 
 /* Estilo para los párrafos con margen izquierdo */
 p {
+    font-family: 'Arial', sans-serif;
+    font-size: large;
     text-align: justify; /* Justificar el texto para una apariencia limpia */
-    padding-left: 2em; /* Sangría en toda la línea (no solo la primera) */
-    margin-bottom: 15px; /* Separación entre párrafos */
-    color: #555; /* Color del texto ligeramente más claro */
-}
+    padding-left: 2em; /* Sangría en toda la línea (no solo la primera) */ /* Separación entre párrafos */
+    color: #000000;
+    line-height: 1.6;
+    padding: 3px;
+    margin: 0;
+} 
+li {
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    text-align: justify; /* Justificar el texto para una apariencia limpia */
+    padding-left: 2em; /* Sangría en toda la línea (no solo la primera) */ /* Separación entre párrafos */
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+} 
 
 /* Estilo de imágenes centradas */
 div img {
