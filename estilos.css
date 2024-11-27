@@ -142,6 +142,82 @@ a.btn:hover {
     background-color: #ff0000;
 
 }
+/* Estilo general para tablas */
+table {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    border-collapse: collapse; /* Combina bordes adyacentes */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    text-align: left; /* Alinear contenido a la izquierda */
+    font-size: large;
+}
+
+/* Estilo para las celdas */
+th, td {
+    border: 1px solid #000; /* Bordes sólidos negros */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo para los encabezados */
+th {
+    background-color: #4CAF50; /* Color de fondo para encabezados */
+    color: #fff; /* Color de texto blanco */
+    font-weight: bold; /* Negrita para resaltar */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilo alternado para filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+/* Estilo al pasar el mouse por encima */
+tr:hover {
+    background-color: #ddd; /* Resaltar fila activa */
+}
+/* Fondo gris para toda la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d3d3d3; 
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.contenedor-texto {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+
+
+.contenedor-texto h2,
+.contenedor-texto h3 {
+    color: #333333; 
+    text-align: left; 
+}
+
+
+.contenedor-texto p,
+.contenedor-texto ul,
+.contenedor-texto ol {
+    color: #000000; 
+    font-size: medium; 
+    text-align: justify; 
+}
+
+/* Ajuste de imágenes */
+.contenedor-texto img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    border-radius: 8px; 
+}
 
 
 
