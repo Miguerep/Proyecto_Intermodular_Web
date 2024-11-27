@@ -81,6 +81,7 @@ div img {
     justify-content: center; /* Alinea los botones al centro */
     gap: 15px; /* Espaciado entre los botones */
     margin-bottom: 20px; /* Separación inferior */
+    margin-top: 20px;
 }
 
 /* Estilo para los botones */
