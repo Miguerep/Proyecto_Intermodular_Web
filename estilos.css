@@ -6,7 +6,7 @@
 /* Estilo del cuerpo de la página */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: #000000;
     line-height: 1.6;
     padding: 40px;
@@ -49,6 +49,7 @@ p {
     line-height: 1.6;
     padding: 3px;
     margin: 0;
+
 } 
 li {
     font-family: 'Arial', sans-serif;
@@ -98,6 +99,21 @@ a.btn {
     min-width: 200px; /* Tamaño mínimo de los botones */
     text-align: center;
 }
+a.btnbck{
+    display: inline-block;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #4CAF50; /* Color de fondo */
+    text-decoration: none;
+    padding: 10px 20px; /* Espaciado interno */
+    border: 2px solid #4CAF50; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Animación para los efectos */
+    min-width: 200px; /* Tamaño mínimo de los botones */
+    text-align: center;
+    margin-left: 40%;
+
+}
 
 /* Efecto hover para los botones */
 a.btn:hover {
@@ -136,11 +152,11 @@ a.btn:hover {
 }
 .divTablaCuerpo {
 	display: table-row-group;
-    background-color: #98fcb1;
+    background-color: #12d342;
 }
 
 .div{
-    background-color: #ff0000;
+    background-color: #ffffff;
 
 }
 /* Estilo general para tablas */
@@ -162,7 +178,7 @@ th, td {
 /* Estilo para los encabezados */
 th {
     background-color: #15a11a; /* Color de fondo para encabezados */
-    color: #fff; /* Color de texto blanco */
+    color: #ff0000; /* Color de texto blanco */
     font-weight: bold; /* Negrita para resaltar */
     text-align: center; /* Centrar texto */
 }
@@ -173,7 +189,7 @@ tr:hover {
 /* Fondo gris para toda la página */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #d3d3d3; 
+    background-color: #757575; 
     color: #000000;
     line-height: 1.6;
     margin: 0;
