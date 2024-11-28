@@ -32,6 +32,10 @@ h2 {
 
 }
 
+h4{
+    font-size: large;
+}
+
 ul {
     font-size: large;
 }
@@ -112,6 +116,7 @@ a.btnbck{
     min-width: 200px; /* Tamaño mínimo de los botones */
     text-align: center;
     margin-left: 40%;
+    margin-top: 5%;
 
 }
 
@@ -124,6 +129,7 @@ a.btn:hover {
 }
 /* DivTable.com */
 .divTabla{
+    margin: auto;    
 	display: table;
 	width: 820px;
 }
@@ -158,6 +164,17 @@ a.btn:hover {
 .div{
     background-color: #ffffff;
 
+}
+div p{
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    text-align: justify; /* Justificar el texto para una apariencia limpia */
+    padding-left: 2em; /* Sangría en toda la línea (no solo la primera) */ /* Separación entre párrafos */
+    color: #000000;
+    line-height: 1.6;
+    padding: 3px;
+    margin: 0;
+  
 }
 /* Estilo general para tablas */
 table {
@@ -214,7 +231,7 @@ body {
 }
 
 
-.contenedor-texto p,
+.contenedor-texto pa,
 .contenedor-texto ul,
 .contenedor-texto ol {
     color: #000000; 
