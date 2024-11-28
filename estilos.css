@@ -112,7 +112,7 @@ a.btnbck{
     min-width: 200px; /* Tamaño mínimo de los botones */
     text-align: center;
     margin-left: 40%;
-    margin-top: 5px;
+    margin-top: 5%;
 
 }
 
@@ -125,6 +125,7 @@ a.btn:hover {
 }
 /* DivTable.com */
 .divTabla{
+    margin: auto;    
 	display: table;
 	width: 820px;
 }
