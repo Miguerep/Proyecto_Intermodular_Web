@@ -112,6 +112,7 @@ a.btnbck{
     min-width: 200px; /* Tamaño mínimo de los botones */
     text-align: center;
     margin-left: 40%;
+    margin-top: 5px;
 
 }
 
