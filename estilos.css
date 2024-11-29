@@ -143,13 +143,13 @@ a.btn:hover {
 	padding: 3px 10px;
     width: 410px;
 }
-.divTablaCeldaDiferencias {
+.divTablaCeldaDe3 {
     border: 1px solid #000000;
 	display: table-cell;
 	padding: 3px 10px;
     width: 33%;
 }
-.divTablaEncabezado, .divTablaEncabezadoDiferencias {
+.divTablaEncabezado, .divTablaEncabezadoDe3 {
 	background-color: #0070dafa;
 	display: table-header-group;
 	font-weight: bold;
