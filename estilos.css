@@ -136,18 +136,20 @@ a.btn:hover {
 .divTablaFila {
 	display: table-row;
 }
-.divTablaEncabezado {
-	background-color: #056b0a;
-	display: table-header-group;
-}
 .divTablaCelda, .divTablaVentInc {
 	border: 1px solid #000000;
 	display: table-cell;
 	padding: 3px 10px;
     width: 410px;
 }
+.divTablaCeldaDiferencias {
+    border: 1px solid #000000;
+	display: table-cell;
+	padding: 3px 10px;
+    width: 33%;
+}
 .divTablaEncabezado {
-	background-color: #26c448;
+	background-color: #01c511;
 	display: table-header-group;
 	font-weight: bold;
 }
@@ -158,7 +160,7 @@ a.btn:hover {
 }
 .divTablaCuerpo {
 	display: table-row-group;
-    background-color: #12d342;
+    background-color: #80ff60bd;
 }
 
 .div{
