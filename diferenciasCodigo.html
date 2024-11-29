@@ -13,230 +13,283 @@
 
         <h1>Diferencias entre los tipos de Códigos</h1>
 
-    <div id="conceptoSW">
-        <p>Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados,
-            que forman parte de las operaciones de un sistema de computación.</p>
-    </div>
+        <div id="conceptoSW">
+            <p>Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados,
+                que forman parte de las operaciones de un sistema de computación.</p>
+        </div>
 
-    <div id="codigoFuente">
-        <h3> 1. Código Fuente</h3>
+        <div id="codigoFuente">
+            <h3> 1. Código Fuente</h3>
 
-        <p>Es el conjunto de instrucciones escritas en un lenguaje de programación de alto nivel (como
-            Python, Java, C++) que los humanos pueden leer y entender fácilmente.</p>
-        <p>Características:</p>
-        <p>Contiene la lógica del programa expresada en un lenguaje sintáctico y semántico entendible por los
-            programadores. Necesita ser traducido para que la máquina pueda ejecutarlo.</p>
-        <p>Un ejemplo de estos pueden ser Python, Java o C++</p>
+            <p>Es el conjunto de instrucciones escritas en un lenguaje de programación de alto nivel (como
+                Python, Java, C++) que los humanos pueden leer y entender fácilmente.</p>
+            <p>Características:</p>
+            <p>Contiene la lógica del programa expresada en un lenguaje sintáctico y semántico entendible por los
+                programadores. Necesita ser traducido para que la máquina pueda ejecutarlo.</p>
+            <p>Un ejemplo de estos pueden ser Python, Java o C++</p>
 
-    </div>
+        </div>
 
-    <div id="codigoObj">
-        <h3>2. Código Objeto</h3>
-        <p>Es el resultado intermedio que se obtiene después de traducir el código fuente mediante un compilador.
-            Está en un formato de bajo nivel (lenguaje máquina) que la computadora entiende parcialmente.</p>
-        <p>Características:</p>
-        <p>No es ejecutable por sí mismo, ya que carece de ciertas referencias, como librerías externas.
-            Es específico para una arquitectura de hardware y sistema operativo.</p>
-    </div>
+        <div id="codigoObj">
+            <h3>2. Código Objeto</h3>
+            <p>Es el resultado intermedio que se obtiene después de traducir el código fuente mediante un compilador.
+                Está en un formato de bajo nivel (lenguaje máquina) que la computadora entiende parcialmente.</p>
+            <p>Características:</p>
+            <p>No es ejecutable por sí mismo, ya que carece de ciertas referencias, como librerías externas.
+                Es específico para una arquitectura de hardware y sistema operativo.</p>
+        </div>
 
-    <div id="codigoEje">
-        <h3>3. Código Ejecutable</h3>
-        <p>Es el archivo final que resulta después de enlazar el código objeto y las librerías necesarias,
-            convirtiéndolo en un programa completamente funcional.</p>
-        <p>Características:</p>
-        <p>Es directamente entendible por el procesador y puede ejecutarse en un sistema operativo específico.
-            Normalmente tiene extensiones como .exe (Windows) o sin extensión específica (Linux/Unix).</p>
+        <div id="codigoEje">
+            <h3>3. Código Ejecutable</h3>
+            <p>Es el archivo final que resulta después de enlazar el código objeto y las librerías necesarias,
+                convirtiéndolo en un programa completamente funcional.</p>
+            <p>Características:</p>
+            <p>Es directamente entendible por el procesador y puede ejecutarse en un sistema operativo específico.
+                Normalmente tiene extensiones como .exe (Windows) o sin extensión específica (Linux/Unix).</p>
 
-    </div>
+        </div>
 
-    <div id="traductores">
-        Tipos de Traductores
-        Los traductores son herramientas que convierten el código fuente a un formato ejecutable o interpretable por la
-        máquina. Los principales tipos son:
+        <div id="traductores">
+            Tipos de Traductores
+            Los traductores son herramientas que convierten el código fuente a un formato ejecutable o interpretable por
+            la
+            máquina. Los principales tipos son:
 
-        <p>
-            a) Compiladores:
-            Función: Convierte el código fuente completo en código objeto o ejecutable en un solo paso.
+            <div id="Compiladores">
+                <h3>a) Compiladores:</h3>
+                <p>Función: Convierte el código fuente completo en código objeto o ejecutable en un solo paso.</p>
+                <p>Ventajas:</p>
+                <p> Genera programas rápidos y optimizados.</p>
+                <p>No requiere la presencia del compilador para ejecutar el programa.</p>
+
+            </div>
+            <div id="interpretes">
+                <h3>b) Intérpretes</h3>
+                <p>Función: Traduce y ejecuta el código fuente línea por línea, sin generar un archivo intermedio.</p>
+                <p>Ventajas:</p>
+                <p>Facilita la depuración porque permite observar errores en tiempo real.</p>
+                <p>Ideal para desarrollo y pruebas.</p>
+                <p>Ejemplo: Python, Ruby.</p>
+            </div>
+
+            <div id="Ensambladores">
+                c) Ensambladores
+                Función: Traduce programas escritos en lenguaje ensamblador (cercano al lenguaje máquina) a código
+                objeto.
+                Ventajas:
+                Permite un control muy preciso del hardware.
+                Ejemplo: NASM, MASM.
+            </div>
+            d) Enlazadores
+            Función: Combina múltiples archivos de código objeto y librerías para generar el código ejecutable final.
             Ventajas:
-            Genera programas rápidos y optimizados.
-            No requiere la presencia del compilador para ejecutar el programa.
-            Ejemplo: GCC (para C/C++), javac (para Java).
-        </p>
-        b) Intérpretes
-        Función: Traduce y ejecuta el código fuente línea por línea, sin generar un archivo intermedio.
-        Ventajas:
-        Facilita la depuración porque permite observar errores en tiempo real.
-        Ideal para desarrollo y pruebas.
-        Ejemplo: Python, Ruby.
-        c) Ensambladores
-        Función: Traduce programas escritos en lenguaje ensamblador (cercano al lenguaje máquina) a código objeto.
-        Ventajas:
-        Permite un control muy preciso del hardware.
-        Ejemplo: NASM, MASM.
-        d) Enlazadores
-        Función: Combina múltiples archivos de código objeto y librerías para generar el código ejecutable final.
-        Ventajas:
-        Resuelve referencias externas para crear un programa funcional.
-        Ejemplo: ld (Linker de GNU).
-        Con estos conceptos claros, puedes entender mejor cómo se transforma un programa desde su creación hasta su
-        ejecución.
-    </div>
-    <div>
-        <h3>Relación entre ellos:</h3>
-        <p>Código fuente: Escrito por el programador (alto nivel).</p>
-        <p>Código objeto: Compilado pero no ejecutable directamente.</p>
-        <p>Código ejecutable: Resultado final que puede ser corrido por el sistema operativo.</p>
-    </div>
+            Resuelve referencias externas para crear un programa funcional.
+            Ejemplo: ld (Linker de GNU).
+            Con estos conceptos claros, puedes entender mejor cómo se transforma un programa desde su creación hasta su
+            ejecución.
+        </div>
+        <div>
+            <h3>Relación entre ellos:</h3>
+            <p>Código fuente: Escrito por el programador (alto nivel).</p>
+            <p>Código objeto: Compilado pero no ejecutable directamente.</p>
+            <p>Código ejecutable: Resultado final que puede ser corrido por el sistema operativo.</p>
+        </div>
 
-    <div>Relación entre ellos:
-        Código fuente: Escrito por el programador (alto nivel).
-        Código objeto: Compilado pero no ejecutable directamente.
-        Código ejecutable: Resultado final que puede ser corrido por el sistema operativo.
-    </div>
+        <div>Relación entre ellos:
+            Código fuente: Escrito por el programador (alto nivel).
+            Código objeto: Compilado pero no ejecutable directamente.
+            Código ejecutable: Resultado final que puede ser corrido por el sistema operativo.
+        </div>
 
 
 
-    <div>
-        <p>La razón de ser de la ingeniería del software radica en abordar de manera estructurada y eficiente los retos
-            asociados con el desarrollo
-            , mantenimiento y gestión de sistemas de software. En esencia, busca garantizar que el software desarrollado
-            sea:</p>
-        <ol>
-            <li>Calidad: Cumpla con los requerimientos funcionales y no funcionales establecidos.</li>
-            <li>Confiable: Reduzca errores y falle con menor frecuencia.</li>
-            <li>Mantenible: Pueda adaptarse a cambios futuros de manera eficiente.</li>
-            <li>Escalable: Maneje el crecimiento en complejidad, usuarios o datos.</li>
-            <li>Eficiente: Use recursos computacionales de forma adecuada.</li>
-        </ol>
-        <p>
-        El propósito principal es desarrollar soluciones de software que satisfagan las necesidades de los usuarios y
-        organizaciones, optimizando recursos, reduciendo riesgos y asegurando la sostenibilidad del producto a largo
-        plazo.
-        <p>
-            Razones Fundamentales:
-        </p>
-        <ol>
-            <li>Complejidad Creciente del Software</li>
+        <div>
+            <p>La razón de ser de la ingeniería del software radica en abordar de manera estructurada y eficiente los
+                retos
+                asociados con el desarrollo
+                , mantenimiento y gestión de sistemas de software. En esencia, busca garantizar que el software
+                desarrollado
+                sea:</p>
+            <ol>
+                <li>Calidad: Cumpla con los requerimientos funcionales y no funcionales establecidos.</li>
+                <li>Confiable: Reduzca errores y falle con menor frecuencia.</li>
+                <li>Mantenible: Pueda adaptarse a cambios futuros de manera eficiente.</li>
+                <li>Escalable: Maneje el crecimiento en complejidad, usuarios o datos.</li>
+                <li>Eficiente: Use recursos computacionales de forma adecuada.</li>
+            </ol>
+            <p>
+                El propósito principal es desarrollar soluciones de software que satisfagan las necesidades de los
+                usuarios y
+                organizaciones, optimizando recursos, reduciendo riesgos y asegurando la sostenibilidad del producto a
+                largo
+                plazo.
+            <p>
+                Razones Fundamentales:
+            </p>
+            <ol>
+                <li>Complejidad Creciente del Software</li>
                 <p>
-                    Los sistemas modernos son cada vez más complejos, interactivos y distribuidos. Sin una metodología formal, el
+                    Los sistemas modernos son cada vez más complejos, interactivos y distribuidos. Sin una metodología
+                    formal, el
                     desarrollo sería caótico e insostenible.
                 </p>
-            <li>Demanda de Alta Calidad</li>
+                <li>Demanda de Alta Calidad</li>
+                <p>
+                    El software afecta la vida cotidiana, desde aplicaciones bancarias hasta sistemas médicos. La
+                    calidad deficiente
+                    puede generar fallos graves.
+                </p>
+                <li>Eficiencia en Costos y Tiempo</li>
+                <p>
+                    Un enfoque estructurado minimiza el retrabajo y asegura que los proyectos se entreguen dentro del
+                    presupuesto y
+                    plazo.
+                </p>
+                <li>Evolución Tecnológica</li>
+                <p>
+                    El software necesita ser escalable y adaptable ante cambios tecnológicos o de requisitos.
+                </p>
+                <li>Trabajo en Equipo</li>
+                <p>
+                    La ingeniería del software proporciona modelos y prácticas para coordinar equipos
+                    multidisciplinarios,
+                    asegurando cohesión y colaboración.
+                </p>
+            </ol>
             <p>
-                El software afecta la vida cotidiana, desde aplicaciones bancarias hasta sistemas médicos. La calidad deficiente
-                puede generar fallos graves.
+                Metas de la Ingeniería del Software:
+                Planificación y gestión eficaz de proyectos.
+                Minimizar riesgos asociados con el desarrollo.
+                Fomentar buenas prácticas mediante estándares.
+                Optimizar el ciclo de vida del software, desde su concepción hasta su retiro.
+                En resumen, la ingeniería del software existe para garantizar que el desarrollo de sistemas sea
+                sistemático,
+                y confiable, abordando los desafíos técnicos y organizativos del desarrollo de software moderno.
             </p>
-            <li>Eficiencia en Costos y Tiempo</li>
-            <p>
-                Un enfoque estructurado minimiza el retrabajo y asegura que los proyectos se entreguen dentro del presupuesto y
-                plazo.
-            </p>
-            <li>Evolución Tecnológica</li>
-            <p>
-                El software necesita ser escalable y adaptable ante cambios tecnológicos o de requisitos.
-            </p>    
-            <li>Trabajo en Equipo</li>
-            <p>
-                La ingeniería del software proporciona modelos y prácticas para coordinar equipos multidisciplinarios,
-                asegurando cohesión y colaboración.
-            </p>
-        </ol>
-        <p>
-            Metas de la Ingeniería del Software:
-            Planificación y gestión eficaz de proyectos.
-            Minimizar riesgos asociados con el desarrollo.
-            Fomentar buenas prácticas mediante estándares.
-            Optimizar el ciclo de vida del software, desde su concepción hasta su retiro.
-            En resumen, la ingeniería del software existe para garantizar que el desarrollo de sistemas sea sistemático,
-            y confiable, abordando los desafíos técnicos y organizativos del desarrollo de software moderno.
-        </p>
-    </div>
-    <div id="ventajasLengMarcas">
-        <h2>Ventajas de los lenguajes de marcas</h2>
-        <ul>
-            <li><strong>Organización estructurada:</strong> Permiten representar datos en una jerarquía clara y comprensible, facilitando su análisis y manejo.</li>
-            <li><strong>Interoperabilidad:</strong> Son estándares ampliamente aceptados, lo que garantiza la compatibilidad entre diferentes sistemas y plataformas.</li>
-            <li><strong>Flexibilidad:</strong> Permiten personalizar la estructura de los datos para adaptarse a necesidades específicas.</li>
-            <li><strong>Escalabilidad:</strong> Facilitan la ampliación o modificación de la estructura de datos sin afectar su integridad.</li>
-            <li><strong>Separación de contenido y presentación:</strong> Ayudan a mantener los datos independientes de su forma de visualización, mejorando la reutilización.</li>
-            <li><strong>Reutilización de datos:</strong> La misma información puede usarse en múltiples contextos o formatos sin duplicación innecesaria.</li>
-            <li><strong>Facilidad de automatización:</strong> Su estructura clara permite un procesamiento eficiente por parte de las máquinas.</li>
-            <li><strong>Estandarización:</strong> Al ser lenguajes basados en estándares, ofrecen consistencia y confianza en su uso.</li>
-            <li><strong>Adaptabilidad a múltiples usos:</strong> Son útiles en una variedad de aplicaciones, como desarrollo web, intercambio de datos y almacenamiento estructurado.</li>
-        </ul>
-    </div>
-    <div id="lengMarcas">
-        <h2>1. Lenguajes de bajo nivel</h2>
+        </div>
+        <div id="ventajasLengMarcas">
+            <h2>Ventajas de los lenguajes de marcas</h2>
+            <ul>
+                <li><strong>Organización estructurada:</strong> Permiten representar datos en una jerarquía clara y
+                    comprensible, facilitando su análisis y manejo.</li>
+                <li><strong>Interoperabilidad:</strong> Son estándares ampliamente aceptados, lo que garantiza la
+                    compatibilidad entre diferentes sistemas y plataformas.</li>
+                <li><strong>Flexibilidad:</strong> Permiten personalizar la estructura de los datos para adaptarse a
+                    necesidades específicas.</li>
+                <li><strong>Escalabilidad:</strong> Facilitan la ampliación o modificación de la estructura de datos sin
+                    afectar su integridad.</li>
+                <li><strong>Separación de contenido y presentación:</strong> Ayudan a mantener los datos independientes
+                    de su forma de visualización, mejorando la reutilización.</li>
+                <li><strong>Reutilización de datos:</strong> La misma información puede usarse en múltiples contextos o
+                    formatos sin duplicación innecesaria.</li>
+                <li><strong>Facilidad de automatización:</strong> Su estructura clara permite un procesamiento eficiente
+                    por parte de las máquinas.</li>
+                <li><strong>Estandarización:</strong> Al ser lenguajes basados en estándares, ofrecen consistencia y
+                    confianza en su uso.</li>
+                <li><strong>Adaptabilidad a múltiples usos:</strong> Son útiles en una variedad de aplicaciones, como
+                    desarrollo web, intercambio de datos y almacenamiento estructurado.</li>
+            </ul>
+        </div>
+        <div id="lengMarcas">
+            <h2>1. Lenguajes de bajo nivel</h2>
 
-        <h4><strong>Lenguaje máquina</strong></h4>
-        <p>
-            Este lenguaje de marcas es el más antiguo que existe. El lenguaje máquina es el único que comprenden los ordenadores. 
-            Cualquier código redactado mediante lenguajes alternativos debe ser convertido a lenguaje máquina para que un ordenador pueda leerlo.
-        </p>
-        <p>
-            El lenguaje máquina se basa en el código binario, es decir, se escribe a base de 0 y 1. Aprender lenguaje máquina es algo muy complejo y no es útil para la creación de programas o webs. 
-            Es por esto que se han creado los demás lenguajes de bajo nivel, para poder redactar código de manera sencilla que puede ser convertido en lenguaje máquina a través de un ensamblador.
-        </p>
-    
-        <h4><strong>Lenguaje ensamblador</strong></h4>
-        <p>
-            Los lenguajes de bajo nivel están muy relacionados con el lenguaje máquina. Ambos tipos de lenguaje tienen como objetivo ser comprendidos por un ordenador. 
-            La única diferencia es que los lenguajes ensambladores están hechos para ser escritos por humanos de manera sencilla. 
-            Pese a esto, tiene que ser traducido por un programa conocido como Ensamblador para que los ordenadores puedan comprenderlo.
-        </p>
-        <p>
-            En definitiva, el lenguajes ensamblador tiene las mismas funciones que el lenguajes máquina, pero está diseñado para poder ser escrito y comprendido con facilidad por los humanos. 
-            Los códigos son mucho más cortos e intuitivos y, además, tienden a ocupar mucho menos memoria.
-        </p>
-    
-        <h2>2. Lenguajes de medio nivel</h2>
-        <p>
-            Los lenguajes de nivel medio tienden a ser clasificados como lenguajes de bajo nivel porque siguen dependiendo de ensambladores para poder ser comprendidos por los ordenadores. 
-            Pese a esto, permiten llevar a cabo tareas mucho más complejas que los lenguajes de bajo nivel como el uso de funciones. 
-            Aun así, muchas tareas deben ser llevadas a cabo de manera manual, aunque hay que destacar que permiten los algoritmos de búsqueda y ordenamiento a diferencia de otros lenguajes de alto nivel.
-        </p>
-        <p>
-            En ese sentido, los lenguajes de medio nivel están orientados hacia la programación de sistemas, por lo que no son adecuados para tareas como el diseño web. 
-            Los lenguajes de medio nivel más conocidos son C y C++.
-        </p>
-    
-        <h2>3. Lenguajes de alto nivel</h2>
-        <p>
-            Los lenguajes de alto nivel son los más adaptados al lenguaje humano, por lo que son los más sencillos de aprender en términos generales. 
-            Como los de medio nivel, tienen que ser traducidos a lenguaje máquina para poder ser ejecutados por un ordenador. 
-            Pese a esto, debido a las modificaciones del lenguaje en relación al código máquina, los ensambladores no son útiles para esto. 
-            Los lenguajes de alto nivel se adaptan al código máquina a través de traductores y compiladores, dependiendo de si se requiere una ejecución más rápida o menos.
-        </p>
-
-        <p>
-            Actualmente, la gran mayoría de lenguajes de marcas existentes son de alto nivel, a excepción de C y C++. 
-            A continuación te dejamos los lenguajes de marcas más utilizados que existen y una breve explicación de sus usos:
-        </p>
-
-        <h3>HTML(HyperText Markup Language)</h3>
+            <h4><strong>Lenguaje máquina</strong></h4>
             <p>
-                El lenguaje de marcas más conocido y utilizado es HTML, que es la base de la estructura de las páginas web. El lenguaje HTML utiliza una serie de etiquetas predefinidas para indicar elementos como títulos, 
-                párrafos, imágenes y enlaces, permitiendo a los desarrolladores crear documentos web estructurados y accesibles.
+                Este lenguaje de marcas es el más antiguo que existe. El lenguaje máquina es el único que comprenden los
+                ordenadores.
+                Cualquier código redactado mediante lenguajes alternativos debe ser convertido a lenguaje máquina para
+                que un ordenador pueda leerlo.
             </p>
-        
-        <h3>XML(eXtensible Markup Language)</h3>
             <p>
-                El XML es un lenguaje de marcas que se utiliza para almacenar y transportar datos. A diferencia del HTML, que tiene un conjunto fijo de etiquetas, el XML permite a los usuarios definir sus propias etiquetas, 
+                El lenguaje máquina se basa en el código binario, es decir, se escribe a base de 0 y 1. Aprender
+                lenguaje máquina es algo muy complejo y no es útil para la creación de programas o webs.
+                Es por esto que se han creado los demás lenguajes de bajo nivel, para poder redactar código de manera
+                sencilla que puede ser convertido en lenguaje máquina a través de un ensamblador.
+            </p>
+
+            <h4><strong>Lenguaje ensamblador</strong></h4>
+            <p>
+                Los lenguajes de bajo nivel están muy relacionados con el lenguaje máquina. Ambos tipos de lenguaje
+                tienen como objetivo ser comprendidos por un ordenador.
+                La única diferencia es que los lenguajes ensambladores están hechos para ser escritos por humanos de
+                manera sencilla.
+                Pese a esto, tiene que ser traducido por un programa conocido como Ensamblador para que los ordenadores
+                puedan comprenderlo.
+            </p>
+            <p>
+                En definitiva, el lenguajes ensamblador tiene las mismas funciones que el lenguajes máquina, pero está
+                diseñado para poder ser escrito y comprendido con facilidad por los humanos.
+                Los códigos son mucho más cortos e intuitivos y, además, tienden a ocupar mucho menos memoria.
+            </p>
+
+            <h2>2. Lenguajes de medio nivel</h2>
+            <p>
+                Los lenguajes de nivel medio tienden a ser clasificados como lenguajes de bajo nivel porque siguen
+                dependiendo de ensambladores para poder ser comprendidos por los ordenadores.
+                Pese a esto, permiten llevar a cabo tareas mucho más complejas que los lenguajes de bajo nivel como el
+                uso de funciones.
+                Aun así, muchas tareas deben ser llevadas a cabo de manera manual, aunque hay que destacar que permiten
+                los algoritmos de búsqueda y ordenamiento a diferencia de otros lenguajes de alto nivel.
+            </p>
+            <p>
+                En ese sentido, los lenguajes de medio nivel están orientados hacia la programación de sistemas, por lo
+                que no son adecuados para tareas como el diseño web.
+                Los lenguajes de medio nivel más conocidos son C y C++.
+            </p>
+
+            <h2>3. Lenguajes de alto nivel</h2>
+            <p>
+                Los lenguajes de alto nivel son los más adaptados al lenguaje humano, por lo que son los más sencillos
+                de aprender en términos generales.
+                Como los de medio nivel, tienen que ser traducidos a lenguaje máquina para poder ser ejecutados por un
+                ordenador.
+                Pese a esto, debido a las modificaciones del lenguaje en relación al código máquina, los ensambladores
+                no son útiles para esto.
+                Los lenguajes de alto nivel se adaptan al código máquina a través de traductores y compiladores,
+                dependiendo de si se requiere una ejecución más rápida o menos.
+            </p>
+
+            <p>
+                Actualmente, la gran mayoría de lenguajes de marcas existentes son de alto nivel, a excepción de C y
+                C++.
+                A continuación te dejamos los lenguajes de marcas más utilizados que existen y una breve explicación de
+                sus usos:
+            </p>
+
+            <h3>HTML(HyperText Markup Language)</h3>
+            <p>
+                El lenguaje de marcas más conocido y utilizado es HTML, que es la base de la estructura de las páginas
+                web. El lenguaje HTML utiliza una serie de etiquetas predefinidas para indicar elementos como títulos,
+                párrafos, imágenes y enlaces, permitiendo a los desarrolladores crear documentos web estructurados y
+                accesibles.
+            </p>
+
+            <h3>XML(eXtensible Markup Language)</h3>
+            <p>
+                El XML es un lenguaje de marcas que se utiliza para almacenar y transportar datos. A diferencia del
+                HTML, que tiene un conjunto fijo de etiquetas, el XML permite a los usuarios definir sus propias
+                etiquetas,
                 lo que lo hace extremadamente flexible y adaptable a diferentes necesidades.
             </p>
             <p>
-                Este lenguaje se utiliza comúnmente en aplicaciones web, servicios web y sistemas de gestión de datos, ya que facilita el intercambio de información entre diferentes sistemas y plataformas.
-            </p>
-            
-        <h3>Markdown</h3>
-            <p>
-                Otro lenguaje de marcas ampliamente utilizado es Markdown. Markdown es una herramienta de marcado ligera que se utiliza para formatear texto de una manera sencilla y legible. 
-                Fue creado para convertir texto plano en HTML de una forma intuitiva y fácil de leer, incluso en su forma sin formato.
-            </p>
-            <p>
-                Markdown se utiliza comúnmente en la redacción de documentación técnica, blogs y otros tipos de contenido en línea, ya que permite a los autores centrarse en la escritura sin preocuparse por el formato.
+                Este lenguaje se utiliza comúnmente en aplicaciones web, servicios web y sistemas de gestión de datos,
+                ya que facilita el intercambio de información entre diferentes sistemas y plataformas.
             </p>
 
+            <h3>Markdown</h3>
+            <p>
+                Otro lenguaje de marcas ampliamente utilizado es Markdown. Markdown es una herramienta de marcado ligera
+                que se utiliza para formatear texto de una manera sencilla y legible.
+                Fue creado para convertir texto plano en HTML de una forma intuitiva y fácil de leer, incluso en su
+                forma sin formato.
+            </p>
+            <p>
+                Markdown se utiliza comúnmente en la redacción de documentación técnica, blogs y otros tipos de
+                contenido en línea, ya que permite a los autores centrarse en la escritura sin preocuparse por el
+                formato.
+            </p>
+
+<<<<<<< Updated upstream
     </div>
 
     <div id="necesidadYAmbitosLM">
@@ -403,10 +456,215 @@
         <div class="divTablaCeldaDiferencias"><strong>Aspecto</strong></div>
         <div class="divTablaCeldaDiferencias"><strong>HTML</strong></div>
         <div class="divTablaCeldaDiferencias"><strong>XHTML</strong></div>
+=======
+>>>>>>> Stashed changes
         </div>
+
+        <div id="necesidadYAmbitosLM">
+            <h2>Necesidad de un lenguaje de marcas de propósito general</h2>
+            <p>Los lenguajes de marcas de propósito general, como <strong>XML</strong> (Extensible Markup Language), son
+                fundamentales para resolver problemas relacionados con la representación, intercambio y almacenamiento
+                de datos en un formato que sea comprensible tanto para humanos como para máquinas. Su necesidad radica
+                en las siguientes razones clave:</p>
+            <ul>
+                <li><strong>Interoperabilidad entre sistemas:</strong> Permite compartir datos entre sistemas
+                    heterogéneos sin perder información o estructura.</li>
+                <li><strong>Estandarización y consistencia:</strong> Proporcionan un método uniforme para describir
+                    datos, reduciendo ambigüedades y errores.</li>
+                <li><strong>Flexibilidad y extensibilidad:</strong> Permiten definir etiquetas personalizadas,
+                    adaptándose a necesidades específicas.</li>
+                <li><strong>Separación de datos y presentación:</strong> Facilitan la reutilización de los datos al
+                    mantenerlos independientes de su formato de presentación.</li>
+                <li><strong>Facilidad de integración:</strong> Pueden integrarse con otras tecnologías para facilitar el
+                    flujo de información.</li>
+                <li><strong>Eficiencia en el tratamiento de grandes volúmenes de datos:</strong> Su estructura
+                    jerárquica permite organizar, filtrar y procesar datos de manera eficiente.</li>
+            </ul>
+
+            <h2>Ámbitos de aplicación específicos</h2>
+            <p>Los lenguajes de marcas de propósito general tienen una amplia variedad de aplicaciones en diferentes
+                sectores y contextos, incluyendo:</p>
+            <ul>
+                <li><strong>Intercambio de datos en sistemas distribuidos:</strong> Usados en APIs, servicios web y
+                    sistemas integrados para permitir la comunicación entre aplicaciones en diferentes lenguajes o
+                    plataformas. Por ejemplo, XML es común en protocolos como SOAP.</li>
+                <li><strong>Gestión y almacenamiento de datos estructurados:</strong> Se utilizan en bases de datos
+                    orientadas a documentos para almacenar y recuperar información compleja, como archivos
+                    <code>.xml</code>.
+                </li>
+                <li><strong>Representación de documentos y metadatos:</strong> En bibliotecas digitales y sistemas de
+                    gestión de contenidos para etiquetar y organizar información textual, como artículos académicos o
+                    documentos legales.</li>
+                <li><strong>Desarrollo de aplicaciones web y móviles:</strong> Permiten almacenar y procesar datos
+                    dinámicos que se consumen en aplicaciones cliente-servidor, como las configuraciones de interfaces
+                    en Android.</li>
+                <li><strong>Comercio electrónico y finanzas:</strong> Se utilizan para estructurar y transmitir datos
+                    financieros, órdenes de compra, facturas electrónicas, etc. Por ejemplo, XBRL para contabilidad.
+                </li>
+                <li><strong>Interoperabilidad en sistemas de información sanitaria:</strong> Son esenciales para
+                    compartir registros médicos electrónicos y otros datos clínicos entre hospitales y organizaciones.
+                    Ejemplo: HL7 basado en XML.</li>
+                <li><strong>Edición y publicación digital:</strong> Se emplean para estructurar el contenido que será
+                    procesado en múltiples formatos de salida, como PDF, HTML o ePub.</li>
+            </ul>
         </div>
+
+        <div id="clasificacionLM">
+            <h2>Clasificación de Lenguajes de Marcas Relacionados con la Web y sus Versiones</h2>
+
+            <h3>1. Lenguajes de marcas para estructura y contenido</h3>
+            <ul>
+                <li><strong>HTML (HyperText Markup Language):</strong>
+                    <ul>
+                        <li>HTML 1.0 (1993): Proporciona una estructura básica para documentos web.</li>
+                        <li>HTML 2.0 (1995): Introduce estándares básicos para interoperabilidad.</li>
+                        <li>HTML 3.2 (1997): Añade soporte para tablas, scripts y diseño.</li>
+                        <li>HTML 4.01 (1999): Mejoras en accesibilidad y formularios.</li>
+                        <li>HTML5 (2014): Soporte para multimedia, gráficos y APIs avanzadas.</li>
+                    </ul>
+                </li>
+                <li><strong>XHTML (eXtensible HyperText Markup Language):</strong>
+                    <ul>
+                        <li>XHTML 1.0 (2000): Basado en HTML 4.01 con reglas más estrictas.</li>
+                        <li>XHTML 1.1 (2001): Mejoras para aplicaciones específicas.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>2. Lenguajes de marcas para descripción de datos</h3>
+            <ul>
+                <li><strong>XML (eXtensible Markup Language):</strong>
+                    <ul>
+                        <li>XML 1.0 (1998): Primera versión estándar.</li>
+                        <li>XML 1.1 (2004): Compatibilidad con caracteres internacionales.</li>
+                    </ul>
+                </li>
+                <li><strong>YAML (YAML Ain't Markup Language):</strong> Alternativa a XML y JSON para configuraciones y
+                    datos.</li>
+            </ul>
+
+            <h3>3. Lenguajes de marcas para presentación</h3>
+            <ul>
+                <li><strong>CSS (Cascading Style Sheets):</strong>
+                    <ul>
+                        <li>CSS1 (1996): Primer estándar para estilos básicos.</li>
+                        <li>CSS2 (1998): Diseño en capas y modelos de caja.</li>
+                        <li>CSS3 (2011): Soporte para animaciones, transiciones y diseño responsivo.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>4. Lenguajes de marcas para gráficos y multimedia</h3>
+            <ul>
+                <li><strong>SVG (Scalable Vector Graphics):</strong>
+                    <ul>
+                        <li>SVG 1.0 (2001): Estándar para gráficos vectoriales escalables.</li>
+                        <li>SVG 1.1 (2011): Compatibilidad mejorada con navegadores.</li>
+                    </ul>
+                </li>
+                <li><strong>SMIL (Synchronized Multimedia Integration Language):</strong>
+                    <ul>
+                        <li>SMIL 1.0 (1998): Sincronización de audio, video y texto.</li>
+                        <li>SMIL 2.0 (2005): Mejoras en funciones multimedia.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>5. Lenguajes de marcas para comunicación</h3>
+            <ul>
+                <li><strong>SOAP (Simple Object Access Protocol):</strong> SOAP 1.2 (2007): Basado en XML para servicios
+                    web.</li>
+                <li><strong>WSDL (Web Services Description Language):</strong>
+                    <ul>
+                        <li>WSDL 1.1 (2001): Descripción básica de servicios web.</li>
+                        <li>WSDL 2.0 (2007): Mejoras para servicios web modernos.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>6. Lenguajes de marcas para semántica web</h3>
+            <ul>
+                <li><strong>RDF (Resource Description Framework):</strong>
+                    <ul>
+                        <li>RDF 1.0 (1999): Representación de información sobre recursos web.</li>
+                        <li>RDF 1.1 (2014): Mejoras en sintaxis y compatibilidad.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="funcionalidadHTML">
+            <h2>Funcionalidad de etiquetas y atributos en HTML</h2>
+
+            <h3>Etiquetas en HTML</h3>
+            <p>Las etiquetas son los componentes fundamentales de HTML y se utilizan para definir la estructura y el
+                contenido de una página web. Están compuestas por un nombre de etiqueta encerrado entre signos de menor
+                que <code>&lt;</code> y mayor que <code>&gt;</code>.</p>
+            <h4>Funcionalidad principal</h4>
+            <ul>
+                <li><strong>Definir estructura:</strong> Organizan los elementos de la página en encabezados, párrafos,
+                    listas, tablas, etc.
+                    <ul>
+                        <li>Ejemplo: <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Incorporar elementos multimedia:</strong> Permiten incluir imágenes, videos o audio.
+                    <ul>
+                        <li>Ejemplo: <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Crear enlaces y navegación:</strong> Facilitan la conexión entre páginas web o secciones.
+                    <ul>
+                        <li>Ejemplo: <code>&lt;a&gt;</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Mejorar la accesibilidad:</strong> Proveen una jerarquía y semántica clara que mejora la
+                    experiencia del usuario, incluyendo a personas con discapacidades.
+                    <ul>
+                        <li>Ejemplo: <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Atributos en HTML</h3>
+            <p>Los atributos proporcionan información adicional o modifican el comportamiento de las etiquetas.
+                Generalmente se colocan dentro de la etiqueta de apertura y consisten en un nombre y un valor.</p>
+            <h4>Funcionalidad principal</h4>
+            <ul>
+                <li><strong>Especificar propiedades de una etiqueta:</strong> Controlan detalles como tamaño, estilo o
+                    comportamiento.
+                    <ul>
+                        <li>Ejemplo: <code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Definir identificadores únicos o clases:</strong> Facilitan el uso de estilos CSS o scripts
+                    JS.
+                    <ul>
+                        <li>Ejemplo: <code>&lt;div id="seccion1" class="contenido"&gt;</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Hacer enlaces dinámicos o interactividad:</strong> Con atributos como <code>href</code>,
+                    <code>target</code> o <code>onclick</code>.
+                    <ul>
+                        <li>Ejemplo:
+                            <code>&lt;a href="https://www.example.com" target="_blank"&gt;Visita&lt;/a&gt;</code>.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h2>Diferencias entre HTML y XHTML</h2>
+        <div class="divTabla">
+            <div class="divTablaEncabezado">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Aspecto</strong></div>
+                    <div class="divTablaCelda"><strong>HTML</strong></div>
+                    <div class="divTablaCelda"><strong>XHTML</strong></div>
+                </div>
+            </div>
         </div>
         <div class="divTabla">
+<<<<<<< Updated upstream
         <div class="divTablaCuerpo">
         <div class="divTablaFila">
         <div class="divTablaCeldaDiferencias"><strong>Basado en</strong></div>
@@ -475,10 +733,86 @@
         <div class="divTablaCeldaDiferencias"><strong>Compatibilidad</strong></div>
         <div class="divTablaCeldaDiferencias">Compatible con sistemas m&aacute;s antiguos.</div>
         <div class="divTablaCeldaDiferencias">M&aacute;s orientado a la interoperabilidad con XML.</div>
+=======
+            <div class="divTablaCuerpo">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Basado en</strong></div>
+                    <div class="divTablaCelda">SGML (Standard Generalized Markup Language).</div>
+                    <div class="divTablaCelda">XML (eXtensible Markup Language).</div>
+                </div>
+            </div>
         </div>
+        <div class="divTabla">
+            <div class="divTablaCuerpo">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Flexibilidad sint&aacute;ctica</strong></div>
+                    <div class="divTablaCelda">M&aacute;s tolerante con errores de c&oacute;digo.</div>
+                    <div class="divTablaCelda">Estricto: no permite errores sint&aacute;cticos.</div>
+                </div>
+            </div>
         </div>
+        <div class="divTabla">
+            <div class="divTablaCuerpo">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Cierre de etiquetas</strong></div>
+                    <div class="divTablaCelda">Las etiquetas pueden no cerrarse correctamente.</div>
+                    <div class="divTablaCelda">Todas las etiquetas deben cerrarse. Ejemplo: <code>&lt;br /&gt;</code>.
+                    </div>
+                </div>
+            </div>
         </div>
-    <a href="./index.html" class="btnbck">INICIO</a>
+        <div class="divTabla">
+            <div class="divTablaCuerpo">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Uso de may&uacute;sculas/min&uacute;sculas</strong></div>
+                    <div class="divTablaCelda">Las etiquetas no distinguen entre may&uacute;sculas y min&uacute;sculas.
+                    </div>
+                    <div class="divTablaCelda">Las etiquetas y atributos son sensibles a
+                        may&uacute;sculas/min&uacute;sculas.</div>
+                </div>
+            </div>
+        </div>
+        <div class="divTabla">
+            <div class="divTablaCuerpo">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Atributos</strong></div>
+                    <div class="divTablaCelda">Pueden estar sin comillas o sin valores expl&iacute;citos.</div>
+                    <div class="divTablaCelda">Los valores de atributos deben estar entre comillas dobles o simples.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divTabla">
+            <div class="divTablaCuerpo">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Doctype</strong></div>
+                    <div class="divTablaCelda">Menos estricto, varios tipos de Doctype disponibles.</div>
+                    <div class="divTablaCelda">Requiere un Doctype espec&iacute;fico:
+                        <code>&lt;!DOCTYPE html PUBLIC...&gt;</code>.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divTabla">
+            <div class="divTablaCuerpo">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Soporte del navegador</strong></div>
+                    <div class="divTablaCelda">Amplia aceptaci&oacute;n incluso con c&oacute;digo incorrecto.</div>
+                    <div class="divTablaCelda">Requiere navegadores modernos que cumplan los est&aacute;ndares.</div>
+                </div>
+            </div>
+        </div>
+        <div class="divTabla">
+            <div class="divTablaCuerpo">
+                <div class="divTablaFila">
+                    <div class="divTablaCelda"><strong>Compatibilidad</strong></div>
+                    <div class="divTablaCelda">Compatible con sistemas m&aacute;s antiguos.</div>
+                    <div class="divTablaCelda">M&aacute;s orientado a la interoperabilidad con XML.</div>
+                </div>
+            </div>
+>>>>>>> Stashed changes
+        </div>
+        <a href="./index.html" class="btnbck">INICIO</a>
     </div>
 </body>
 
