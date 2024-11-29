@@ -345,6 +345,139 @@
             </li>
         </ul>
     </div>
+
+    <div id="funcionalidadHTML">
+        <h2>Funcionalidad de etiquetas y atributos en HTML</h2>
+
+        <h3>Etiquetas en HTML</h3>
+        <p>Las etiquetas son los componentes fundamentales de HTML y se utilizan para definir la estructura y el contenido de una página web. Están compuestas por un nombre de etiqueta encerrado entre signos de menor que <code>&lt;</code> y mayor que <code>&gt;</code>.</p>
+        <h4>Funcionalidad principal</h4>
+        <ul>
+            <li><strong>Definir estructura:</strong> Organizan los elementos de la página en encabezados, párrafos, listas, tablas, etc.
+                <ul>
+                    <li>Ejemplo: <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Incorporar elementos multimedia:</strong> Permiten incluir imágenes, videos o audio.
+                <ul>
+                    <li>Ejemplo: <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Crear enlaces y navegación:</strong> Facilitan la conexión entre páginas web o secciones.
+                <ul>
+                    <li>Ejemplo: <code>&lt;a&gt;</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Mejorar la accesibilidad:</strong> Proveen una jerarquía y semántica clara que mejora la experiencia del usuario, incluyendo a personas con discapacidades.
+                <ul>
+                    <li>Ejemplo: <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Atributos en HTML</h3>
+        <p>Los atributos proporcionan información adicional o modifican el comportamiento de las etiquetas. Generalmente se colocan dentro de la etiqueta de apertura y consisten en un nombre y un valor.</p>
+        <h4>Funcionalidad principal</h4>
+        <ul>
+            <li><strong>Especificar propiedades de una etiqueta:</strong> Controlan detalles como tamaño, estilo o comportamiento.
+                <ul>
+                    <li>Ejemplo: <code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Definir identificadores únicos o clases:</strong> Facilitan el uso de estilos CSS o scripts JS.
+                <ul>
+                    <li>Ejemplo: <code>&lt;div id="seccion1" class="contenido"&gt;</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Hacer enlaces dinámicos o interactividad:</strong> Con atributos como <code>href</code>, <code>target</code> o <code>onclick</code>.
+                <ul>
+                    <li>Ejemplo: <code>&lt;a href="https://www.example.com" target="_blank"&gt;Visita&lt;/a&gt;</code>.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h2>Diferencias entre HTML y XHTML</h2>
+    <div class="divTabla">
+        <div class="divTablaEncabezado">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Aspecto</strong></div>
+        <div class="divTablaCelda"><strong>HTML</strong></div>
+        <div class="divTablaCelda"><strong>XHTML</strong></div>
+        </div>
+        </div>
+        </div>
+        <div class="divTabla">
+        <div class="divTablaCuerpo">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Basado en</strong></div>
+        <div class="divTablaCelda">SGML (Standard Generalized Markup Language).</div>
+        <div class="divTablaCelda">XML (eXtensible Markup Language).</div>
+        </div>
+        </div>
+        </div>
+        <div class="divTabla">
+        <div class="divTablaCuerpo">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Flexibilidad sint&aacute;ctica</strong></div>
+        <div class="divTablaCelda">M&aacute;s tolerante con errores de c&oacute;digo.</div>
+        <div class="divTablaCelda">Estricto: no permite errores sint&aacute;cticos.</div>
+        </div>
+        </div>
+        </div>
+        <div class="divTabla">
+        <div class="divTablaCuerpo">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Cierre de etiquetas</strong></div>
+        <div class="divTablaCelda">Las etiquetas pueden no cerrarse correctamente.</div>
+        <div class="divTablaCelda">Todas las etiquetas deben cerrarse. Ejemplo: <code>&lt;br /&gt;</code>.</div>
+        </div>
+        </div>
+        </div>
+        <div class="divTabla">
+        <div class="divTablaCuerpo">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Uso de may&uacute;sculas/min&uacute;sculas</strong></div>
+        <div class="divTablaCelda">Las etiquetas no distinguen entre may&uacute;sculas y min&uacute;sculas.</div>
+        <div class="divTablaCelda">Las etiquetas y atributos son sensibles a may&uacute;sculas/min&uacute;sculas.</div>
+        </div>
+        </div>
+        </div>
+        <div class="divTabla">
+        <div class="divTablaCuerpo">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Atributos</strong></div>
+        <div class="divTablaCelda">Pueden estar sin comillas o sin valores expl&iacute;citos.</div>
+        <div class="divTablaCelda">Los valores de atributos deben estar entre comillas dobles o simples.</div>
+        </div>
+        </div>
+        </div>
+        <div class="divTabla">
+        <div class="divTablaCuerpo">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Doctype</strong></div>
+        <div class="divTablaCelda">Menos estricto, varios tipos de Doctype disponibles.</div>
+        <div class="divTablaCelda">Requiere un Doctype espec&iacute;fico: <code>&lt;!DOCTYPE html PUBLIC...&gt;</code>.</div>
+        </div>
+        </div>
+        </div>
+        <div class="divTabla">
+        <div class="divTablaCuerpo">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Soporte del navegador</strong></div>
+        <div class="divTablaCelda">Amplia aceptaci&oacute;n incluso con c&oacute;digo incorrecto.</div>
+        <div class="divTablaCelda">Requiere navegadores modernos que cumplan los est&aacute;ndares.</div>
+        </div>
+        </div>
+        </div>
+        <div class="divTabla">
+        <div class="divTablaCuerpo">
+        <div class="divTablaFila">
+        <div class="divTablaCelda"><strong>Compatibilidad</strong></div>
+        <div class="divTablaCelda">Compatible con sistemas m&aacute;s antiguos.</div>
+        <div class="divTablaCelda">M&aacute;s orientado a la interoperabilidad con XML.</div>
+        </div>
+        </div>
+        </div>
     <a href="./index.html" class="btnbck">INICIO</a>
     </div>
 </body>
