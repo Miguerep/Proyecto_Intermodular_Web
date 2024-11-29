@@ -148,7 +148,7 @@ a.btn:hover {
 	padding: 3px 10px;
     width: 33%;
 }
-.divTablaEncabezado {
+.divTablaEncabezado, .divTablaEncabezadoDiferencias {
 	background-color: #01c511;
 	display: table-header-group;
 	font-weight: bold;
