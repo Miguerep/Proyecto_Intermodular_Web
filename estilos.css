@@ -16,7 +16,7 @@ body {
 /* Estilo del encabezado (título) */
 h1 {
     font-size: 4em;
-    color: #4CAF50;
+    color: #4385ff;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -25,11 +25,11 @@ h1 {
 
 h2 {
     font-size: x-large;
-    color: darkseagreen;
-    text-align: justify;
-    margin-top: auto;
-    margin-bottom: auto;
-
+    color: #26c8fa;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px #000000;
 }
 
 h4{
@@ -63,6 +63,7 @@ li {
     color: #000000;
     line-height: 1.6;
     margin: 0;
+    padding-top: 15px;
 } 
 
 /* Estilo de imágenes centradas */
@@ -94,10 +95,10 @@ a.btn {
     display: inline-block;
     font-size: 1.2em;
     color: #ffffff;
-    background-color: #4CAF50; /* Color de fondo */
+    background-color: #0099ff; /* Color de fondo */
     text-decoration: none;
     padding: 10px 20px; /* Espaciado interno */
-    border: 2px solid #4CAF50; /* Borde del botón */
+    border: 2px solid #00a2ff; /* Borde del botón */
     border-radius: 5px; /* Bordes redondeados */
     transition: all 0.3s ease; /* Animación para los efectos */
     min-width: 200px; /* Tamaño mínimo de los botones */
@@ -107,10 +108,10 @@ a.btnbck{
     display: inline-block;
     font-size: 1.2em;
     color: #ffffff;
-    background-color: #4CAF50; /* Color de fondo */
+    background-color: #00ccff; /* Color de fondo */
     text-decoration: none;
     padding: 10px 20px; /* Espaciado interno */
-    border: 2px solid #4CAF50; /* Borde del botón */
+    border: 2px solid #00ccff; /* Borde del botón */
     border-radius: 5px; /* Bordes redondeados */
     transition: all 0.3s ease; /* Animación para los efectos */
     min-width: 200px; /* Tamaño mínimo de los botones */
@@ -123,8 +124,8 @@ a.btnbck{
 /* Efecto hover para los botones */
 a.btn:hover {
     background-color: #ffffff; /* Fondo blanco al pasar el ratón */
-    color: #4CAF50; /* Cambia el texto a verde */
-    border-color: #4CAF50; /* Mantiene el borde verde */
+    color: #4c82af; /* Cambia el texto a verde */
+    border-color: #4c82af; /* Mantiene el borde verde */
     text-decoration: none; /* Evita subrayado */
 }
 /* DivTable.com */
@@ -149,18 +150,18 @@ a.btn:hover {
     width: 33%;
 }
 .divTablaEncabezado, .divTablaEncabezadoDiferencias {
-	background-color: #01c511;
+	background-color: #0070dafa;
 	display: table-header-group;
 	font-weight: bold;
 }
 .divTablaFinal {
-	background-color: #08eb67;
+	background-color: #38c7ff;
 	display: table-footer-group;
 	font-weight: bold;
 }
 .divTablaCuerpo {
 	display: table-row-group;
-    background-color: #80ff60bd;
+    background-color: #73befc;
 }
 
 .div{
@@ -226,12 +227,19 @@ body {
 }
 
 
-.contenedor-texto h2,
-.contenedor-texto h3 {
-    color: #333333; 
-    text-align: left; 
+.contenedor-texto h2 {
+    font-size: x-large;
+    color: #26c8fa;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px #000000;
 }
 
+.contenedor-texto h3 {
+    color: #68c8ffe8; 
+    text-align: left; 
+}
 
 .contenedor-texto pa,
 .contenedor-texto ul,
