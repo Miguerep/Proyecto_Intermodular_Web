@@ -10,96 +10,323 @@
     </head>
     <body>
         <script src="javaScript.js"></script>
-        <h1>Test de 4 Preguntas</h1> <!-- Encabezado principal de la página -->
+        <h1>Comprueba lo que has aprendido.</h1> <!-- Encabezado principal de la página -->
 
   <!-- Formulario que contiene las preguntas del test -->
   <form id="quiz">
+    <h3>Explicar la relación entre software y hardware. </h3>
     <!-- Primera pregunta -->
-    <div class="question">
-      <p>1. ¿Qué componente se encarga de ejecutar las instrucciones del software?</p> <!-- Texto de la pregunta -->
-      <!-- Opciones de respuesta -->
-      <div class="options">
-        <input type="radio" name="question1" value="correcta" id="q1a1"> <!-- Opción correcta -->
-        <label for="q1a1">A) Sistema operativo</label> <!-- Etiqueta asociada al botón -->
-      </div>
-      <div class="options">
-        <input type="radio" name="question1" value="incorrecta" id="q1a2"> <!-- Opción incorrecta -->
-        <label for="q1a2">B) Procesador</label> <!-- Etiqueta asociada -->
-      </div>
-      <div class="options">
-        <input type="radio" name="question1" value="incorrecta" id="q1a3"> <!-- Opción incorrecta -->
-        <label for="q1a3">C) Monitor</label> <!-- Etiqueta asociada -->
-      </div>
-      <div class="options">
-        <input type="radio" name="question1" value="incorrecta" id="q1a4"> <!-- Opción incorrecta -->
-        <label for="q1a4">D) Memoria RAM</label> <!-- Etiqueta asociada -->
-      </div>
-    </div>
+        <div class="pregunta">
+        <p>1. ¿Qué componente se encarga de ejecutar las instrucciones del software?</p> <!-- Texto de la pregunta -->
+        <!-- Opciones de respuesta -->
+        <div class="optiones">
+            <input type="radio" name="pregunta1" value="correcta" id="q1a1"> <!-- Opción correcta -->
+            <label for="q1a1">A) Sistema operativo</label> <!-- Etiqueta asociada al botón -->
+        </div>
+        <div class="optiones">
+            <input type="radio" name="pregunta1" value="incorrecta" id="q1a2"> 
+            <label for="q1a2">B) Procesador</label> 
+        </div>
+        <div class="optiones">
+            <input type="radio" name="pregunta1" value="incorrecta" id="q1a3"> 
+            <label for="q1a3">C) Monitor</label> 
+        </div>
+        <div class="optiones">
+            <input type="radio" name="pregunta1" value="incorrecta" id="q1a4"> 
+            <label for="q1a4">D) Memoria RAM</label> 
+        </div>
+        </div>
 
         <!-- Segunda pregunta -->
-        <div class="question">
+        <div class="pregunta">
             <p>2. ¿Cuál de las siguientes es una relación correcta entre hardware y software?</p> <!-- Texto de la pregunta -->
             <!-- Opciones de respuesta -->
-            <div class="options">
-              <input type="radio" name="question2" value="incorrecta" id="q2a1"> <!-- Opción incorrecta -->
-              <label for="q2a1">A) El software permite que el hardware se comunique con otros dispositivos.</label> <!-- Etiqueta asociada -->
+            <div class="optiones">
+              <input type="radio" name="pregunta2" value="incorrecta" id="q2a1"> 
+              <label for="q2a1">A) El software permite que el hardware se comunique con otros dispositivos.</label> 
             </div>
-            <div class="options">
-              <input type="radio" name="question2" value="correcta" id="q2a2"> <!-- Opción correcta -->
-              <label for="q2a2">B) El hardware contiene instrucciones para controlar el software.</label> <!-- Etiqueta asociada -->
+            <div class="optiones">
+              <input type="radio" name="pregunta2" value="incorrecta" id="q2a2"> <!-- Opción correcta -->
+              <label for="q2a2">B) El hardware contiene instrucciones para controlar el software.</label> 
             </div>
-            <div class="options">
-              <input type="radio" name="question2" value="incorrecta" id="q2a3"> <!-- Opción incorrecta -->
-              <label for="q2a3">C) El hardware ejecuta las instrucciones proporcionadas por el software.</label> <!-- Etiqueta asociada -->
+            <div class="optiones">
+              <input type="radio" name="pregunta2" value="correcta" id="q2a3"> 
+              <label for="q2a3">C) El hardware ejecuta las instrucciones proporcionadas por el software.</label> 
             </div>
-            <div class="options">
-              <input type="radio" name="question2" value="incorrecta" id="q2a4"> <!-- Opción incorrecta -->
-              <label for="q2a4">D) El software reemplaza al hardware en ciertas tareas.</label> <!-- Etiqueta asociada -->
+            <div class="optiones">
+              <input type="radio" name="pregunta2" value="incorrecta" id="q2a4"> 
+              <label for="q2a4">D) El software reemplaza al hardware en ciertas tareas.</label> 
             </div>
           </div>
       
           <!-- Tercera pregunta -->
-          <div class="question">
-            <p>3. ¿Cuál es el océano más grande?</p> <!-- Texto de la pregunta -->
+          <div class="pregunta">
+            <p>3. ¿Qué tipo de software es imprescindible para que el hardware funcione de manera básica?</p> <!-- Texto de la pregunta -->
             <!-- Opciones de respuesta -->
-            <div class="options">
-              <input type="radio" name="question3" value="incorrecta" id="q3a1"> <!-- Opción incorrecta -->
-              <label for="q3a1">Atlántico</label> <!-- Etiqueta asociada -->
+            <div class="optiones">
+              <input type="radio" name="pregunta3" value="incorrecta" id="q3a1"> 
+              <label for="q3a1">A) Antivirus</label> 
             </div>
-            <div class="options">
-              <input type="radio" name="question3" value="correcta" id="q3a2"> <!-- Opción correcta -->
-              <label for="q3a2">Pacífico</label> <!-- Etiqueta asociada -->
+            <div class="optiones">
+              <input type="radio" name="pregunta3" value="correcta" id="q3a2"> <!-- Opción correcta -->
+              <label for="q3a2">B) Sistema operativo</label> 
             </div>
-            <div class="options">
-              <input type="radio" name="question3" value="incorrecta" id="q3a3"> <!-- Opción incorrecta -->
-              <label for="q3a3">Índico</label> <!-- Etiqueta asociada -->
+            <div class="optiones">
+              <input type="radio" name="pregunta3" value="incorrecta" id="q3a3"> 
+              <label for="q3a3">C) Aplicaciones de usuario</label> 
             </div>
-            <div class="options">
-              <input type="radio" name="question3" value="incorrecta" id="q3a4"> <!-- Opción incorrecta -->
-              <label for="q3a4">Ártico</label> <!-- Etiqueta asociada -->
+            <div class="optiones">
+              <input type="radio" name="pregunta3" value="incorrecta" id="q3a4"> 
+              <label for="q3a4">D) Controladores de red.</label> 
             </div>
           </div>
              <!-- Cuarta pregunta -->
-    <div class="question">
-        <p>4. ¿Quién escribió 'Cien años de soledad'?</p> <!-- Texto de la pregunta -->
+        <div class="pregunta">
+            <p>4. ¿Cuál es un ejemplo de hardware?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta4" value="incorrecta" id="q4a1"> <!-- Opción correcta -->
+            <label for="q4a1">A) Microsoft Word</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta4" value="correcta" id="q4a2"> 
+            <label for="q4a2">B) Placa base</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta4" value="incorrecta" id="q4a3"> 
+            <label for="q4a3">C) Navegador web</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta4" value="incorrecta" id="q4a4"> 
+            <label for="q4a4">D) Archivo PDF</label> 
+            </div>
+        </div>
+
+
+
+    <h3>Describir Características de la generación de código intermedio para ejecución en máquinas virtuales. </h3>
+        <div class="pregunta">
+            <p>1. ¿Cuál es el principal beneficio de generar un código intermedio en lugar de compilar directamente a lenguaje máquina?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta5" value="incorrecta" id="q5a1">
+            <label for="q5a1">A) Mayor velocidad de ejecución.</label>
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta5" value="correcta" id="q5a2"> 
+            <label for="q5a2">B) Independencia de la plataforma.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta5" value="incorrecta" id="q5a3"> 
+            <label for="q5a3">C) Reducción del tamaño del programa.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta5" value="incorrecta" id="q5a4"> 
+            <label for="q5a4">D) Compatibilidad con sistemas operativos antiguos.</label> 
+            </div>
+        </div>
+        <div class="pregunta">
+
+        <p>2. En el contexto de las máquinas virtuales, ¿qué técnica mejora el desempeño al convertir código intermedio en instrucciones máquina en tiempo de ejecución?</p> <!-- Texto de la pregunta -->
         <!-- Opciones de respuesta -->
-        <div class="options">
-          <input type="radio" name="question4" value="correcta" id="q4a1"> <!-- Opción correcta -->
-          <label for="q4a1">Gabriel García Márquez</label> <!-- Etiqueta asociada -->
+        <div class="optiones">
+          <input type="radio" name="pregunta6" value="incorrecta" id="q6a1"> <!-- Opción correcta -->
+          <label for="q6a1">A) Compilación Ahead-of-Time (AOT).</label> 
         </div>
-        <div class="options">
-          <input type="radio" name="question4" value="incorrecta" id="q4a2"> <!-- Opción incorrecta -->
-          <label for="q4a2">Mario Vargas Llosa</label> <!-- Etiqueta asociada -->
+        <div class="optiones">
+          <input type="radio" name="pregunta6" value="incorrecta" id="q6a2"> 
+          <label for="q6a2">B) Traducción estática.</label> 
         </div>
-        <div class="options">
-          <input type="radio" name="question4" value="incorrecta" id="q4a3"> <!-- Opción incorrecta -->
-          <label for="q4a3">Jorge Luis Borges</label> <!-- Etiqueta asociada -->
+        <div class="optiones">
+          <input type="radio" name="pregunta6" value="correcta" id="q6a3"> 
+          <label for="q6a3">C) Compilación Just-In-Time (JIT).</label> 
         </div>
-        <div class="options">
-          <input type="radio" name="question4" value="incorrecta" id="q4a4"> <!-- Opción incorrecta -->
-          <label for="q4a4">Pablo Neruda</label> <!-- Etiqueta asociada -->
+        <div class="optiones">
+          <input type="radio" name="pregunta6" value="incorrecta" id="q6a4"> 
+          <label for="q6a4">D) Interpretación simple.</label> 
         </div>
       </div>
+
+
+        <div class="pregunta">
+            <p>3. ¿Cuál de las siguientes NO es una característica típica del código intermedio?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="opciones">
+            <input type="radio" name="pregunta7" value="incorrecta" id="q7a1">
+            <label for="q7a1">A) Portabilidad.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta7" value="incorrecta" id="q7a2"> 
+            <label for="q7a2">B) Independencia del lenguaje fuente.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta7" value="correcta" id="q7a3"> 
+            <label for="q7a3">C) Cercanía directa al lenguaje máquina.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta7" value="incorrecta" id="q7a4"> 
+            <label for="q7a4">D) Capacidad de optimización.</label> 
+            </div>
+        </div>
+
+
+        <div class="pregunta">
+            <p>4. ¿Qué estructura es comúnmente usada para representar código intermedio en compiladores modernos?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta8" value="incorrecta" id="q8a1"> <!-- Opción correcta -->
+            <label for="q8a1">A) Árboles de derivación.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta8" value="correcta" id="q8a2"> 
+            <label for="q8a2">B) Código de tres direcciones.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta8" value="incorrecta" id="q8a3"> 
+            <label for="q8a3">C) Esquemas de traducción dirigida por sintaxis.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta8" value="incorrecta" id="q8a4"> 
+            <label for="q8a4">D) Diagramas de flujo.</label> 
+            </div>
+        </div>
+
+    <h3>Describir las Metodologías RUP y Ágil.</h3>
+        <div class="pregunta">
+            <p>1. ¿Cuántas fases principales tiene RUP?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta9" value="incorrecta" id="q9a1"> <!-- Opción correcta -->
+            <label for="q9a1">A) 3</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta9" value="correcta" id="q9a2"> 
+            <label for="q9a2">B) 4</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta9" value="incorrecta" id="q9a3"> 
+            <label for="q9a3">C) 5</label> 
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <p>2. ¿Qué metodología utiliza sprints?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta10" value="incorrecta" id="q10a1"> <!-- Opción correcta -->
+            <label for="q10a1">A) RUP.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta10" value="correcta" id="q10a2"> 
+            <label for="q10a2">B) Ágil</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta10" value="incorrecta" id="q10a3"> 
+            <label for="q10a3">C) Ninguna</label> 
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <p>3. ¿Qué fase de RUP se centra en la entrega al cliente?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta11" value="incorrecta" id="q11a1"> <!-- Opción correcta -->
+            <label for="q11a1">A) Inicio.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta11" value="incorrecta" id="q11a2"> 
+            <label for="q11a2">B) Construcción</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta11" value="correcta" id="q11a3"> 
+            <label for="q11a3">C) Transición</label> 
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <p>4. ¿Qué prioriza Ágil sobre la documentación extensa?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta12" value="correcta" id="q12a1"> <!-- Opción correcta -->
+            <label for="q12a1">A) Software funcional.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta12" value="incorrecta" id="q12a2"> 
+            <label for="q12a2">B) Planificación detallada.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta12" value="incorrecta" id="q12a3"> 
+            <label for="q412a3">C) Análisis de riesgos.</label> 
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <p>5. ¿Cuál es una característica clave de RUP?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta13" value="incorrecta" id="q13a1"> <!-- Opción correcta -->
+            <label for="q13a1">A) Adaptación rápida al cambio.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta13" value="correcta" id="q13a2"> 
+            <label for="q13a2">B) Roles y procesos definidos.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta13" value="incorrecta" id="q13a3"> 
+            <label for="q13a3">C) Falta de documentación.</label> 
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <p>6. ¿Qué metodología es ideal para requisitos cambiantes?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta14" value="incorrecta" id="q14a1"> <!-- Opción correcta -->
+            <label for="q14a1">A) RUP.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta14" value="correcta" id="q14a2"> 
+            <label for="q14a2">B) Ágil.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta14" value="incorrecta" id="q14a3"> 
+            <label for="q14a3">C) Ninguna.</label> 
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <p>7. ¿Qué práctica es común en Scrum?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta15" value="incorrecta" id="q15a1"> <!-- Opción correcta -->
+            <label for="q15a1">A) Tableros visuales.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta15" value="correcta" id="q15a2"> 
+            <label for="q15a2">B) Reuniones diarias.</label> 
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta15" value="incorrecta" id="q15a3"> 
+            <label for="q15a3">C) Fases estrictas.</label> 
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <p>8. ¿Qué tienen en común RUP y Ágil?</p> 
+            <!-- Opciones de respuesta -->
+            <div class="optiones">
+            <input type="radio" name="pregunta16" value="correcta" id="q16a1">
+            <label for="q16a1">A) Uso de ciclos iterativos.</label>
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta16" value="incorrecta" id="q16a2">
+            <label for="q16a2">B) Enfoque en documentación.</label>
+            </div>
+            <div class="optiones">
+            <input type="radio" name="pregunta16" value="incorrecta" id="q16a3">
+            <label for="q16a3">C)  Requisitos rígidos.</label>
+            </div>
+        </div>
     </form>
     <button onclick="submitQuiz()">Enviar respuestas</button>
   <!-- Div donde se mostrará el resultado -->
