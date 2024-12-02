@@ -1,71 +1,26 @@
 // Preguntas del test
-const preguntas = [
-    {
-        pregunta: "¿Cuál es el lenguaje usado para el desarrollo web?",
-        opciones: ["Python", "JavaScript", "C++", "Java"],
-        respuestaCorrecta: 1, // Índice de la respuesta correcta
-    },
-    {
-        pregunta: "¿Cuál es el resultado de 2 + 2?",
-        opciones: ["3", "4", "5", "6"],
-        respuestaCorrecta: 1,
-    },
-    {
-        pregunta: "¿Qué significa CSS?",
-        opciones: [
-            "Creative Style Sheets",
-            "Cascading Style Sheets",
-            "Computer Style Sheets",
-            "Colorful Style Sheets",
-        ],
-        respuestaCorrecta: 1,
-    },
-];
+function submitQuiz() {
+    let correctAnswers = 0; // Inicializa el contador de respuestas correctas
+    const totalQuestions = 4; // Total de preguntas en el test
 
-// Seleccionar el contenedor del test
-const contenedorTest = document.getElementById("test-container");
+    // Obtiene las respuestas seleccionadas por el usuario
+    const answers = {
+      question1: document.querySelector('input[name="question1"]:checked')?.value, // Respuesta de la pregunta 1
+      question2: document.querySelector('input[name="question2"]:checked')?.value, // Respuesta de la pregunta 2
+      question3: document.querySelector('input[name="question3"]:checked')?.value, // Respuesta de la pregunta 3
+      question4: document.querySelector('input[name="question4"]:checked')?.value, // Respuesta de la pregunta 4
+    };
 
-// Generar las preguntas dinámicamente
-preguntas.forEach((pregunta, index) => {
-    const preguntaDiv = document.createElement("div");
-    preguntaDiv.classList.add("question");
-    
-    // Título de la pregunta
-    const tituloPregunta = document.createElement("h3");
-    tituloPregunta.textContent = `${index + 1}. ${pregunta.pregunta}`;
-    preguntaDiv.appendChild(tituloPregunta);
+    // Verifica si cada respuesta es correcta y actualiza el contador
+    if (answers.question1 === 'correcta') correctAnswers++;
+    if (answers.question2 === 'correcta') correctAnswers++;
+    if (answers.question3 === 'correcta') correctAnswers++;
+    if (answers.question4 === 'correcta') correctAnswers++;
 
-    // Opciones
-    pregunta.opciones.forEach((opcion, opcionIndex) => {
-        const label = document.createElement("label");
-        const input = document.createElement("input");
-        input.type = "radio";
-        input.name = `pregunta-${index}`; // Agrupamos por pregunta
-        input.value = opcionIndex;
+    // Calcula el porcentaje de respuestas correctas
+    const percentage = (correctAnswers / totalQuestions) * 100;
 
-        label.appendChild(input);
-        label.appendChild(document.createTextNode(opcion));
-        preguntaDiv.appendChild(label);
-        preguntaDiv.appendChild(document.createElement("br"));
-    });
-
-    contenedorTest.appendChild(preguntaDiv);
-});
-
-// Escuchar el evento del botón de envío
-document.getElementById("submit-test").addEventListener("click", () => {
-    let puntaje = 0;
-
-    preguntas.forEach((pregunta, index) => {
-        const seleccionada = document.querySelector(
-            `input[name="pregunta-${index}"]:checked`
-        );
-        if (seleccionada && parseInt(seleccionada.value) === pregunta.respuestaCorrecta) {
-            puntaje++;
-        }
-    });
-
-    // Mostrar resultado
-    const resultadoDiv = document.getElementById("result");
-    resultadoDiv.textContent = `¡Has acertado ${puntaje} de ${preguntas.length} preguntas!`;
-});
+    // Muestra el resultado en el DOM
+    const resultDiv = document.getElementById('result'); // Obtiene el div donde se mostrará el resultado
+    resultDiv.innerText = `Has acertado ${correctAnswers} de ${totalQuestions} preguntas (${percentage.toFixed(2)}%).`; // Muestra el resultado
+  }
