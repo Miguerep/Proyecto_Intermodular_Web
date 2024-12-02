@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva -->
+  <title>Test de 4 Preguntas</title> <!-- Título de la página -->
+  <style>
+    /* Estilo general de la página */
+    body {
+      font-family: Arial, sans-serif; /* Fuente principal */
+      text-align: center; /* Centra el contenido en la página */
+      margin: 20px; /* Agrega un margen alrededor de la página */
+    }
+
+    /* Estilo para el contenedor de cada pregunta */
+    .question {
+      text-align: left; /* Alinea el texto de las preguntas y respuestas a la izquierda */
+      margin: 20px auto; /* Agrega espacio vertical entre preguntas y centra el contenedor */
+      max-width: 500px; /* Limita el ancho máximo del contenedor */
+    }
+
+    /* Estilo para las opciones de respuesta (radio buttons y etiquetas) */
+    .options {
+      display: flex; /* Coloca el radio button y el texto en una línea */
+      align-items: center; /* Alinea verticalmente los elementos dentro de la opción */
+      margin: 5px 0; /* Agrega espacio entre las opciones */
+    }
+
+    /* Espaciado entre el radio button y el texto de la etiqueta */
+    .options input {
+      margin-right: 10px; /* Agrega espacio a la derecha del radio button */
+    }
+
+    /* Estilo del botón de enviar */
+    button {
+      margin: 20px; /* Espacio alrededor del botón */
+      padding: 10px 20px; /* Tamaño del botón (espacio interno) */
+      font-size: 16px; /* Tamaño del texto del botón */
+      cursor: pointer; /* Cambia el cursor a una mano al pasar por el botón */
+    }
+
+    /* Estilo del mensaje de resultado */
+    #result {
+      margin-top: 20px; /* Agrega espacio encima del mensaje */
+      font-size: 20px; /* Tamaño del texto del resultado */
+      font-weight: bold; /* Hace el texto más grueso */
+    }
+  </style>
+</head>
+<body>
+  <h1>Test de 4 Preguntas</h1> <!-- Encabezado principal de la página -->
+
+  <!-- Formulario que contiene las preguntas del test -->
+  <form id="quiz">
+    <!-- Primera pregunta -->
+    <div class="question">
+      <p>1. ¿Cuál es la capital de Francia?</p> <!-- Texto de la pregunta -->
+      <!-- Opciones de respuesta -->
+      <div class="options">
+        <input type="radio" name="question1" value="correcta" id="q1a1"> <!-- Opción correcta -->
+        <label for="q1a1">París</label> <!-- Etiqueta asociada al botón -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question1" value="incorrecta" id="q1a2"> <!-- Opción incorrecta -->
+        <label for="q1a2">Londres</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question1" value="incorrecta" id="q1a3"> <!-- Opción incorrecta -->
+        <label for="q1a3">Berlín</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question1" value="incorrecta" id="q1a4"> <!-- Opción incorrecta -->
+        <label for="q1a4">Roma</label> <!-- Etiqueta asociada -->
+      </div>
+    </div>
+
+    <!-- Segunda pregunta -->
+    <div class="question">
+      <p>2. ¿Cuánto es 2 + 2?</p> <!-- Texto de la pregunta -->
+      <!-- Opciones de respuesta -->
+      <div class="options">
+        <input type="radio" name="question2" value="incorrecta" id="q2a1"> <!-- Opción incorrecta -->
+        <label for="q2a1">3</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question2" value="correcta" id="q2a2"> <!-- Opción correcta -->
+        <label for="q2a2">4</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question2" value="incorrecta" id="q2a3"> <!-- Opción incorrecta -->
+        <label for="q2a3">5</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question2" value="incorrecta" id="q2a4"> <!-- Opción incorrecta -->
+        <label for="q2a4">6</label> <!-- Etiqueta asociada -->
+      </div>
+    </div>
+
+    <!-- Tercera pregunta -->
+    <div class="question">
+      <p>3. ¿Cuál es el océano más grande?</p> <!-- Texto de la pregunta -->
+      <!-- Opciones de respuesta -->
+      <div class="options">
+        <input type="radio" name="question3" value="incorrecta" id="q3a1"> <!-- Opción incorrecta -->
+        <label for="q3a1">Atlántico</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question3" value="correcta" id="q3a2"> <!-- Opción correcta -->
+        <label for="q3a2">Pacífico</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question3" value="incorrecta" id="q3a3"> <!-- Opción incorrecta -->
+        <label for="q3a3">Índico</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question3" value="incorrecta" id="q3a4"> <!-- Opción incorrecta -->
+        <label for="q3a4">Ártico</label> <!-- Etiqueta asociada -->
+      </div>
+    </div>
+
+    <!-- Cuarta pregunta -->
+    <div class="question">
+      <p>4. ¿Quién escribió 'Cien años de soledad'?</p> <!-- Texto de la pregunta -->
+      <!-- Opciones de respuesta -->
+      <div class="options">
+        <input type="radio" name="question4" value="correcta" id="q4a1"> <!-- Opción correcta -->
+        <label for="q4a1">Gabriel García Márquez</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question4" value="incorrecta" id="q4a2"> <!-- Opción incorrecta -->
+        <label for="q4a2">Mario Vargas Llosa</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question4" value="incorrecta" id="q4a3"> <!-- Opción incorrecta -->
+        <label for="q4a3">Jorge Luis Borges</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question4" value="incorrecta" id="q4a4"> <!-- Opción incorrecta -->
+        <label for="q4a4">Pablo Neruda</label> <!-- Etiqueta asociada -->
+      </div>
+    </div>
+  </form>
+
+  <!-- Botón para enviar las respuestas -->
+  <button onclick="submitQuiz()">Enviar respuestas</button>
+  <!-- Div donde se mostrará el resultado -->
+  <div id="result"></div>
+
+  <script>
+    function submitQuiz() {
+      let correctAnswers = 0; // Inicializa el contador de respuestas correctas
+      const totalQuestions = 4; // Total de preguntas en el test
+
+      // Obtiene las respuestas seleccionadas por el usuario
+      const answers = {
+        question1: document.querySelector('input[name="question1"]:checked')?.value, // Respuesta de la pregunta 1
+        question2: document.querySelector('input[name="question2"]:checked')?.value, // Respuesta de la pregunta 2
+        question3: document.querySelector('input[name="question3"]:checked')?.value, // Respuesta de la pregunta 3
+        question4: document.querySelector('input[name="question4"]:checked')?.value, // Respuesta de la pregunta 4
+      };
+
+      // Verifica si cada respuesta es correcta y actualiza el contador
+      if (answers.question1 === 'correcta') correctAnswers++;
+      if (answers.question2 === 'correcta') correctAnswers++;
+      if (answers.question3 === 'correcta') correctAnswers++;
+      if (answers.question4 === 'correcta') correctAnswers++;
+
+      // Calcula el porcentaje de respuestas correctas
+      const percentage = (correctAnswers / totalQuestions) * 100;
+
+      // Muestra el resultado en el DOM
+      const resultDiv = document.getElementById('result'); // Obtiene el div donde se mostrará el resultado
+      resultDiv.innerText = `Has acertado ${correctAnswers} de ${totalQuestions} preguntas (${percentage.toFixed(2)}%).`; // Muestra el resultado
+    }
+  </script>
+</body>
+</html>
+
