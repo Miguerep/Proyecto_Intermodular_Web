@@ -9,6 +9,100 @@
             <link rel="stylesheet" type="text/css" href="./estilos.css" />
     </head>
     <body>
-        
+        <script src="javaScript.js"></script>
+        <h1>Test de 4 Preguntas</h1> <!-- Encabezado principal de la página -->
+
+  <!-- Formulario que contiene las preguntas del test -->
+  <form id="quiz">
+    <!-- Primera pregunta -->
+    <div class="question">
+      <p>1. ¿Cuál es la capital de Francia?</p> <!-- Texto de la pregunta -->
+      <!-- Opciones de respuesta -->
+      <div class="options">
+        <input type="radio" name="question1" value="correcta" id="q1a1"> <!-- Opción correcta -->
+        <label for="q1a1">París</label> <!-- Etiqueta asociada al botón -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question1" value="incorrecta" id="q1a2"> <!-- Opción incorrecta -->
+        <label for="q1a2">Londres</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question1" value="incorrecta" id="q1a3"> <!-- Opción incorrecta -->
+        <label for="q1a3">Berlín</label> <!-- Etiqueta asociada -->
+      </div>
+      <div class="options">
+        <input type="radio" name="question1" value="incorrecta" id="q1a4"> <!-- Opción incorrecta -->
+        <label for="q1a4">Roma</label> <!-- Etiqueta asociada -->
+      </div>
+    </div>
+
+        <!-- Segunda pregunta -->
+        <div class="question">
+            <p>2. ¿Cuánto es 2 + 2?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="options">
+              <input type="radio" name="question2" value="incorrecta" id="q2a1"> <!-- Opción incorrecta -->
+              <label for="q2a1">3</label> <!-- Etiqueta asociada -->
+            </div>
+            <div class="options">
+              <input type="radio" name="question2" value="correcta" id="q2a2"> <!-- Opción correcta -->
+              <label for="q2a2">4</label> <!-- Etiqueta asociada -->
+            </div>
+            <div class="options">
+              <input type="radio" name="question2" value="incorrecta" id="q2a3"> <!-- Opción incorrecta -->
+              <label for="q2a3">5</label> <!-- Etiqueta asociada -->
+            </div>
+            <div class="options">
+              <input type="radio" name="question2" value="incorrecta" id="q2a4"> <!-- Opción incorrecta -->
+              <label for="q2a4">6</label> <!-- Etiqueta asociada -->
+            </div>
+          </div>
+      
+          <!-- Tercera pregunta -->
+          <div class="question">
+            <p>3. ¿Cuál es el océano más grande?</p> <!-- Texto de la pregunta -->
+            <!-- Opciones de respuesta -->
+            <div class="options">
+              <input type="radio" name="question3" value="incorrecta" id="q3a1"> <!-- Opción incorrecta -->
+              <label for="q3a1">Atlántico</label> <!-- Etiqueta asociada -->
+            </div>
+            <div class="options">
+              <input type="radio" name="question3" value="correcta" id="q3a2"> <!-- Opción correcta -->
+              <label for="q3a2">Pacífico</label> <!-- Etiqueta asociada -->
+            </div>
+            <div class="options">
+              <input type="radio" name="question3" value="incorrecta" id="q3a3"> <!-- Opción incorrecta -->
+              <label for="q3a3">Índico</label> <!-- Etiqueta asociada -->
+            </div>
+            <div class="options">
+              <input type="radio" name="question3" value="incorrecta" id="q3a4"> <!-- Opción incorrecta -->
+              <label for="q3a4">Ártico</label> <!-- Etiqueta asociada -->
+            </div>
+          </div>
+             <!-- Cuarta pregunta -->
+    <div class="question">
+        <p>4. ¿Quién escribió 'Cien años de soledad'?</p> <!-- Texto de la pregunta -->
+        <!-- Opciones de respuesta -->
+        <div class="options">
+          <input type="radio" name="question4" value="correcta" id="q4a1"> <!-- Opción correcta -->
+          <label for="q4a1">Gabriel García Márquez</label> <!-- Etiqueta asociada -->
+        </div>
+        <div class="options">
+          <input type="radio" name="question4" value="incorrecta" id="q4a2"> <!-- Opción incorrecta -->
+          <label for="q4a2">Mario Vargas Llosa</label> <!-- Etiqueta asociada -->
+        </div>
+        <div class="options">
+          <input type="radio" name="question4" value="incorrecta" id="q4a3"> <!-- Opción incorrecta -->
+          <label for="q4a3">Jorge Luis Borges</label> <!-- Etiqueta asociada -->
+        </div>
+        <div class="options">
+          <input type="radio" name="question4" value="incorrecta" id="q4a4"> <!-- Opción incorrecta -->
+          <label for="q4a4">Pablo Neruda</label> <!-- Etiqueta asociada -->
+        </div>
+      </div>
+    </form>
+    <button onclick="submitQuiz()">Enviar respuestas</button>
+  <!-- Div donde se mostrará el resultado -->
+  <div id="result"></div>
     </body>
 </html>
