@@ -111,11 +111,12 @@ function submitQuiz() {
   if (respuesta.pregunta50 === 'correcta') respuestaCorrecta++;
   if (respuesta.pregunta51 === 'correcta') respuestaCorrecta++;
   if (respuesta.pregunta52 === 'correcta') respuestaCorrecta++;  
-  // Calcular el porcentaje de aciertos
-  const porcentaje = (respuestaCorrecta / totalpreguntas) * 100;
+  // Calcular el percentage de aciertos
+  const percentage = (respuestaCorrecta / totalpreguntas) * 100;
 
   // Mostrar el resultado
-  const resultadoDiv = document.getElementById('resultado');
-  resultadoDiv.innerText = `Has acertado ${respuestaCorrecta} de ${totalpreguntas} preguntas (${porcentaje.toFixed(2)}%).`;
+  const resultDiv = document.getElementById('result');
+  resultDiv.innerText = `Has acertado ${respuestaCorrecta} de ${totalpreguntas} preguntas (${percentage.toFixed(2)}%).`;
 }
-  
+
+      
