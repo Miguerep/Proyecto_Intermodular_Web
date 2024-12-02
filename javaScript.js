@@ -1,13 +1,13 @@
     // Respuestas correctas de las preguntas en un array
     const correctAnswers = {
-      question1: 'Sistema operativo',
-      question2: '',
-      question3: '',
-      question4: ''
+      question1: 'A',
+      question2: 'B',
+      question3: 'C',
+      question4: 'D'
     };
 // Preguntas del test
   // Recorrer todas las preguntas
-  for (let i = 1; i <= 12; i++) {
+  for (let i = 1; i <= 4; i++) {
     let question = 'question' + i;
     let selectedAnswer = document.querySelector(input[name="${question}"]:checked);
     let questionDiv = document.querySelector(div:nth-of-type(${i}));
