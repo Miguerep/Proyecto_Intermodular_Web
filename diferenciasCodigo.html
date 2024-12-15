@@ -179,15 +179,30 @@
                 Los lenguajes de alto nivel se adaptan al código máquina a través de traductores y compiladores,
                 dependiendo de si se requiere una ejecución más rápida o menos.
             </p>
-            <h1>Ingeniería del Software</h1>
-            <p>
-                Actualmente, la gran mayoría de lenguajes de programación existentes son de alto nivel, a excepción de C y
-                C++.
-                A continuación te dejamos los lenguajes de programación más utilizados que existen y una breve explicación de
-                sus usos:
-            </p>
+            <div id="codigoIntermedio">
+            <h1>Características de la Generación de Código Intermedio</h1>
 
-        </div>
+            <h3>1. Portabilidad</h3>
+            <ul>
+                <li><strong>Abstracto respecto al hardware:</strong> El código intermedio es independiente de la arquitectura específica del hardware, permitiendo que el mismo programa se ejecute en múltiples plataformas si existe una máquina virtual adecuada.</li>
+                <li><strong>Ejemplo:</strong> Bytecode de Java para la Java Virtual Machine (JVM) o Common Intermediate Language (CIL) para .NET.</li>
+            </ul>
+        
+            <h3>2. Eficiencia en la Ejecución</h3>
+            <ul>
+                <li><strong>Diseño compacto:</strong> Se diseñan instrucciones sencillas y compactas que facilitan la interpretación o compilación justa a tiempo (Just-In-Time, JIT).</li>
+                <li><strong>Optimización previa:</strong> Antes de ser interpretado o traducido al código máquina, el código intermedio puede optimizarse, lo que reduce costos de procesamiento.</li>
+            </ul>
+        
+            <h3>3. Nivel Intermedio de Abstracción</h3>
+            <ul>
+                <li><strong>Más abstracto que el ensamblador:</strong> Es más cercano al lenguaje de alto nivel que al lenguaje máquina.</li>
+                <li><strong>Instrucciones sencillas:</strong> Los programas en código intermedio suelen descomponerse en operaciones atómicas que las máquinas virtuales pueden procesar fácilmente.</li>
+            </ul>
+                
+         </div>
+
+    </div>
 
         <a href="./index.html" class="btnbck">INICIO</a>
 </body>
