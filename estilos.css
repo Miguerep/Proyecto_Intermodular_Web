@@ -312,8 +312,40 @@ caption {
         font-weight: bold; /* Hace el texto más grueso */
       }
 
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        margin: 20px;
+        text-align: left;
+    }
 
+    .pregunta {
+        margin-bottom: 20px;
+    }
 
+    .pregunta p {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .opciones {
+        display: block; /* Asegura que las opciones estén en columnas */
+    }
+
+    .opciones label {
+        display: block; /* Cada opción ocupa una línea completa */
+        margin-bottom: 5px; /* Espaciado entre las opciones */
+    }
+
+    input[type="radio"] {
+        vertical-align: middle; /* Alinea el botón con el texto */
+        margin: 0; /* Elimina márgenes adicionales */
+        margin-right: 5px; /* Espacio entre el botón y el texto */
+    }
+
+    label {
+        cursor: pointer; /* Hace clic en el texto para seleccionar */
+    }
 
 
 
